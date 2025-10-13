@@ -6,6 +6,12 @@
   }
 }
 
+@mixin on-mobile() {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
 @mixin on-tablet() {
   @media (min-width: $tablet) {
     @content;
@@ -26,6 +32,10 @@
 
 @mixin content-padding() {
   padding-inline: 20px;
+
+  @include on-mobile {
+    padding-inline: 25px;
+  }
 
   @include on-tablet {
     padding-inline: 33px;

@@ -1,5 +1,5 @@
 .about {
-  background: linear-gradient(to bottom, #191536, #000);
+  background: linear-gradient(#d38a70, #5d3b2f);
   padding-block: 48px;
 
   &__top {
@@ -299,7 +299,7 @@
       margin-bottom: 15px;
       font-size: 14px;
       line-height: 100%;
-      color: $main-title-color-accent;
+      color: #f4970f;
 
       @include on-tablet {
         margin-bottom: 12px;
@@ -345,7 +345,7 @@
         line-height: 130%;
         text-transform: uppercase;
         opacity: 1;
-        -webkit-text-stroke: 1px #00d4ff;
+        -webkit-text-stroke: 1px #f4970f;
         -webkit-text-fill-color: transparent;
 
         &::before {
@@ -358,7 +358,7 @@
           font-size: 48px;
           font-weight: 900;
           text-transform: uppercase;
-          -webkit-text-stroke: 1px #00d4ff;
+          -webkit-text-stroke: 1px #f4970f;
           -webkit-text-fill-color: transparent;
           opacity: 0.4;
 
@@ -380,7 +380,7 @@
           font-size: 48px;
           font-weight: 900;
           text-transform: uppercase;
-          -webkit-text-stroke: 1px #00d4ff;
+          -webkit-text-stroke: 1px #f4970f;
           -webkit-text-fill-color: transparent;
           opacity: 0.2;
 
@@ -416,6 +416,14 @@
     @include on-desktopmiddle {
       padding-left: 100px;
     }
+  }
+
+  &__bottom-left {
+    text-align: left;
+  }
+
+  @include on-mobile {
+    text-align: center;
   }
 
   @include on-tablet {

@@ -20,16 +20,20 @@
   &.aside--open {
     opacity: 1;
     transform: perspective(1000px) rotateY(0deg); /* "Открывается" как страница */
+    background-color: #602e2a;
     // transform: translateX(0%);
     pointer-events: all;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &--close {
     grid-column: 2 / -1;
     justify-self: end;
     background-image: url(../icons/menu-close.svg);
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     margin-top: 20px;
 
     &-video {
@@ -57,8 +61,26 @@
       background-image: url(../icons/menu-closeBlue.svg);
     }
 
+    @include on-mobile {
+      width: 15px;
+      height: 15px;
+      margin-top: 15px;
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+
     @include on-tablet {
-      margin: 35px 0 20px;
+      margin: 15px;
+    }
+
+    @include on-desktoplittle {
+      width: 20px;
+      height: 20px;
+    }
+
+    @include on-desktopmiddle {
+      width: 24px;
+      height: 24px;
     }
   }
 
@@ -87,11 +109,12 @@
   }
 
   &-help {
+    display: grid;
     @include on-desktoplittle {
-      margin: 15px 25px 25px 0;
+      margin: 20px;
     }
     @include on-desktopmiddle {
-      margin: 30px 24px 25px 0;
+      margin: 25px 24px 25px 0;
     }
   }
 

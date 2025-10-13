@@ -41,6 +41,10 @@
     opacity: 1;
     transform: perspective(1000px) rotateY(0deg);
     pointer-events: all;
+
+    @include on-mobile {
+      padding: 15px;
+    }
   }
 
   &__wrapper {
@@ -68,8 +72,12 @@
       display: flex; /* Располагаем элементы горизонтально */
       align-items: center;
       position: absolute;
-      top: 60px;
+      top: 27px;
       left: 36%;
+    }
+
+    @include on-desktopmiddle {
+      top: 47px;
     }
   }
 
@@ -123,6 +131,22 @@
         display: none;
       }
     }
+
+    &--tech {
+      @include on-mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__nav {
+    @include on-mobile {
+      display: none;
+    }
+
+    @include on-desktoplittle {
+      display: block;
+    }
   }
 
   &:target .menu__item,
@@ -174,12 +198,12 @@
 
   &__link {
     font-weight: 500;
-    font-size: 21px;
+
     line-height: 130%;
-    padding: 11px 100% 11px 5px;
+    padding: 11px 90% 11px 5px;
     color: $main-title-color;
     &:hover {
-      color: $main-title-color-accent;
+      color: #f4970f;
       background-color: #110e25;
 
       @include on-desktoplittle {
@@ -190,6 +214,10 @@
     @include on-desktoplittle {
       font-size: 16px;
       padding: 11px 15px;
+    }
+
+    @include on-desktopmiddle {
+      font-size: 21px;
     }
   }
 
@@ -203,8 +231,33 @@
 
     @include hover(transform, scale(1.2));
 
+    @include on-mobile {
+      grid-column: 10 / -1;
+      justify-self: auto;
+    }
+
     @include on-tablet {
-      margin-top: 34px;
+      grid-column: 12 / -1;
+    }
+  }
+
+  &__page {
+    background: linear-gradient(#d38a70, #5d3b2f);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+    @include on-mobile {
+      padding: 10px;
+    }
+
+    @include on-desktoplittle {
+      padding: 14px;
+    }
+
+    @include on-desktopmiddle {
+      padding: 27px;
     }
   }
 }

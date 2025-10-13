@@ -7,7 +7,7 @@
     font-size: 14px;
     line-height: 100%;
     margin-bottom: 15px;
-    color: $main-title-color-accent;
+    color: #2a1109;
   }
 
   &__title {
@@ -22,9 +22,14 @@
     }
   }
 
+  @include on-mobile {
+    margin-bottom: 120px;
+    padding-top: 50px;
+  }
+
   @include on-tablet {
     padding-top: 70px;
-    margin-bottom: 245px;
+    margin-bottom: 150px;
   }
 
   @include on-desktoplittle {
@@ -125,6 +130,10 @@
   font-weight: 500;
   margin-top: 7px;
 
+  @include on-mobile {
+    padding: 10px;
+  }
+
   @include on-tablet {
     width: 200px;
     margin-top: 23px;
@@ -138,6 +147,11 @@
   @include on-desktopmiddle {
     margin-top: 30px;
   }
+}
+
+.contact-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
 .contact-group--error input,
@@ -168,6 +182,7 @@
 
 .error-message {
   display: none;
+  margin-top: 5%;
 }
 
 .contact-group--error .error-message {
@@ -175,7 +190,6 @@
   color: red;
   font-size: 14px;
   line-height: 150%;
-  margin-top: -15px;
 }
 
 .contact-group--error label {
@@ -203,14 +217,22 @@
 
 /* Стили для сообщения под кнопкой */
 .contact-message {
-  color: #b0b0b0;
+  color: #2a1109;
   font-size: 12px;
   line-height: 150%;
+
+  @include on-mobile {
+    margin-bottom: 15px;
+  }
 
   @include on-tablet {
     font-size: 16px;
     margin-bottom: 72px;
   }
+}
+
+.success-message {
+  display: none;
 }
 
 .contact-info {
@@ -219,6 +241,10 @@
   width: 130px;
   position: absolute;
   transform: translate(115%, 148%);
+
+  @include on-mobile {
+    transform: translate(55%, 10%);
+  }
 
   @include on-tablet {
     position: static;
@@ -230,7 +256,7 @@
 }
 
 .contact-info a {
-  color: $main-text-color;
+  color: #2a1109;
 
   &:hover {
     color: $main-title-color;

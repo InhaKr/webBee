@@ -2,13 +2,22 @@
   grid-column: span 2;
 
   &__img-static {
-    width: 320px;
+    @include on-mobile {
+      width: 250px;
+    }
 
     @include on-tablet {
-      width: 386px;
+      width: 310px;
+      grid-column: 4/-1;
+      transform: translateY(0%);
     }
+
     @include on-desktoplittle {
-      display: none;
+      width: 320px;
+    }
+
+    @include on-desktopmiddle {
+      width: 360px;
     }
   }
 
@@ -41,23 +50,26 @@
     }
   }
 
+  @include on-mobile {
+    margin: 15px auto;
+  }
+
   @include on-tablet {
     grid-column: 4/-1;
-    transform: translateY(45%);
   }
 
   @include on-desktoplittle {
     position: relative;
-    width: 100%;
+    width: fit-content;
     height: 360px; /* Укажи нужную высоту слайдера */
     overflow: hidden;
     grid-column: 7 / -1;
-    transform: translateX(-6%) translateY(30%);
+    transform: translateX(30%) translateY(10%);
   }
 
   @include on-desktopmiddle {
-    height: 400px;
-    transform: translateX(-17%) translateY(75%);
+    // height: 400px;
+    transform: translateX(45%) translateY(30%);
   }
 }
 

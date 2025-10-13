@@ -25,136 +25,218 @@
     <header
       class="header"
       id="header"
-    >
-      <div class="container">
-        <div class="header__top">
-          <a
-            href="#"
-            class="header__logo"
+     >
+
+      <div class="header__top">
+        <a
+          href="#"
+          class="header__logo"
           >
-            <img
-              class="header__logo-img"
-              src="icons/logo-small.png"
-              alt="logo"
-            />
-          </a>
+          <img
+            class="header__logo-img"
+            src="icons/logo-small.png"
+            alt="logo"
+          />
+        </a>
 
-          <div class="lang-switcher">
-            <div class="lang-switcher__current">
-              <span>En</span>
-              <svg
-                class="lang-switcher__arrow"
-                width="9"
-                height="6"
-                viewBox="0 0 9 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0L5 6L10 0H0Z"
-                  fill="#00c4cc"
-                />
-              </svg>
+        <div class="menu menu-decktop"
+          id="menu"
+          >
+          <!--<div class="container">-->
+            <div class="menu__wrapper">
+              <a
+                href="#"
+                class="icon menu--close icon-close--menu"
+              ></a>
+
+              <div class="menu__bottom">
+                <nav class="menu__nav">
+                  <ul class="menu__list">
+                    <li class="menu__item menu__item-menu">
+                      <a
+                        class="menu__link"
+                        href="#about"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li class="menu__item menu__item-menu menu__item--tech">
+                      <a
+                        class="menu__link"
+                        href="#tech"
+                      >
+                        For you
+                      </a>
+                    </li>
+                    <li class="menu__item menu__item-menu">
+                      <a
+                        class="menu__link"
+                        href="#products"
+                      >
+                        Category
+                      </a>
+                    </li>
+                    <li class="menu__item menu__item-menu">
+                      <a
+                        class="menu__link"
+                        href="#contact"
+                      >
+                        Contact
+                      </a>
+                    </li>
+                    <!--<li class="menu__item">
+                      <a
+                        class="menu__link menu__item-lang"
+                        href="#lang"
+                      >
+                        Language
+                      </a>
+                    </li>-->
+                  </ul>
+                </nav>
+              </div>
             </div>
-            <ul class="lang-switcher__dropdown">
-              <li>
-                <a
-                  href="#"
-                  data-lang="en"
-                  class="menu__link lang__link"
-                >
-                  En
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-lang="ar"
-                  class="menu__link lang__link"
-                >
-                  Ar
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-lang="zh-s"
-                  class="menu__link lang__link"
-                >
-                  ChiS
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-lang="zh-t"
-                  class="menu__link lang__link"
-                >
-                  ChiT
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-lang="fr"
-                  class="menu__link lang__link"
-                >
-                  Fr
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-lang="de"
-                  class="menu__link lang__link"
-                >
-                  deu
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-lang="it"
-                  class="menu__link lang__link"
-                >
-                  Ita
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-lang="pl"
-                  class="menu__link lang__link"
-                >
-                  Pl
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-lang="ru"
-                  class="menu__link lang__link"
-                >
-                  Ru
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  data-lang="uk"
-                  class="menu__link lang__link"
-                >
-                  Uk
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <a
-            href="#menu"
-            class="icon header__icon--menu"
-          ></a>
+          <!--</div>-->
         </div>
+
+        <div class="wishlist">
+          <a
+            class="wishlist-link"
+            href="#wish"
+            >
+            <svg class="wishlist-icon" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </a>
+          <span class="wishlist-count">0</span>
+        </div>
+
+        <div class="main-button busket-button">
+          <a
+            class="header__bottom-link"
+            href="#buy"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="shopping-cart" >
+              <path d="m23.433,4.915c-.477-.582-1.182-.915-1.934-.915H4.49l-.256-1.843c-.17-1.229-1.234-2.157-2.476-2.157H.5C.224,0,0,.224,0,.5s.224.5.5.5h1.259c.745,0,1.383.556,1.485,1.294l1.781,12.825c.308,2.212,2.225,3.881,4.457,3.881h10.018c.276,0,.5-.224.5-.5s-.224-.5-.5-.5h-10.018c-1.73,0-3.214-1.289-3.462-3h12.64c2.138,0,3.993-1.521,4.412-3.617l.879-4.393c.147-.738-.042-1.494-.519-2.075Zm-.462,1.879l-.879,4.393c-.326,1.63-1.77,2.813-3.432,2.813H5.879l-1.25-9h16.87c.451,0,.874.2,1.16.549.286.349.399.803.312,1.245Zm-15.971,13.206c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Zm10-3c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Z"/>
+            </svg>
+          </a>
+          <span class="basket-count">0</span>
+        </div>
+        <!--<div class="lang-switcher">
+          <div class="lang-switcher__current">
+            <span>En</span>
+            <svg
+              class="lang-switcher__arrow"
+              width="9"
+              height="6"
+              viewBox="0 0 9 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0L5 6L10 0H0Z"
+                fill="#00c4cc"
+              />
+            </svg>
+          </div>
+          <ul class="lang-switcher__dropdown">
+            <li>
+              <a
+                href="#"
+                data-lang="en"
+                class="menu__link lang__link"
+              >
+                En
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-lang="ar"
+                class="menu__link lang__link"
+              >
+                Ar
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-lang="zh-s"
+                class="menu__link lang__link"
+              >
+                ChiS
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-lang="zh-t"
+                class="menu__link lang__link"
+              >
+                ChiT
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-lang="fr"
+                class="menu__link lang__link"
+              >
+                Fr
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-lang="de"
+                class="menu__link lang__link"
+              >
+                deu
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-lang="it"
+                class="menu__link lang__link"
+              >
+                Ita
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-lang="pl"
+                class="menu__link lang__link"
+              >
+                Pl
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-lang="ru"
+                class="menu__link lang__link"
+              >
+                Ru
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-lang="uk"
+                class="menu__link lang__link"
+              >
+                Uk
+              </a>
+            </li>
+          </ul>
+        </div>-->
+
+        <a
+          href="#menu"
+          class="icon header__icon--menu"
+        ></a>
       </div>
 
       <div class="header__content">
@@ -164,736 +246,1880 @@
             src="images/image1.png"
             alt="VR Headset"
           />
-
-          <div class="slider__item">
-            <img
-              class="slider__img"
-              src="images/image1.png"
-              alt="VR Headset"
-            />
-          </div>
-          <div class="slider__item">
-            <img
-              class="slider__img"
-              src="images/image2.jpg"
-              alt="VR Headset"
-            />
-          </div>
-          <div class="slider__item">
-            <img
-              class="slider__img"
-              src="images/image3.jpg"
-              alt="VR Headset"
-            />
-          </div>
-          <div class="slider__item">
-            <img
-              class="slider__img"
-              src="images/image4.jpg"
-              alt="VR Headset"
-            />
-          </div>
         </div>
 
         <div class="header__info">
           <h1 class="header__title">
-            12THE NEW START OF
+            HONEY
             <br />
-            <span class="header__title--color">VR LOCOMOTION</span>
+            <span class="header__title--color">Natural honey is
+            <br />the energy of life!</span>
           </h1>
 
           <p class="header__text">
-            Discover the most comprehensive VR Locomotion system, and unlock
-            infinite motion in any games on any platforms!
+            Pure organic honey straight from the bees! Taste, benefits, and natural power in every spoon!
           </p>
-          <span class="header__price">1200$</span>
-
-          <div class="header__video">
-            <a
-              href="#"
-              class="icon aside--close-video"
-              data-video="vrVideo"
-            ></a>
-            <iframe
-              class="header__video-iframe"
-              id="vrVideo"
-              src="https://www.youtube.com/embed/SvTbB19bvIw?enablejsapi=1"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-
-            <button
-              class="play-button"
-              data-video="vrVideo"
-            >
-              <svg
-                width="221"
-                height="69"
-                viewBox="0 0 221 69"
-                fill="black"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M107.278 40V28.3636H111.426C112.331 28.3636 113.081 28.5284 113.676 28.858C114.271 29.1875 114.716 29.6383 115.011 30.2102C115.307 30.7784 115.455 31.4186 115.455 32.1307C115.455 32.8466 115.305 33.4905 115.006 34.0625C114.71 34.6307 114.263 35.0814 113.665 35.4148C113.07 35.7443 112.322 35.9091 111.42 35.9091H108.568V34.4205H111.261C111.833 34.4205 112.297 34.322 112.653 34.125C113.009 33.9242 113.271 33.6515 113.438 33.3068C113.604 32.9621 113.688 32.5701 113.688 32.1307C113.688 31.6913 113.604 31.3011 113.438 30.9602C113.271 30.6193 113.008 30.3523 112.648 30.1591C112.292 29.9659 111.822 29.8693 111.239 29.8693H109.034V40H107.278ZM119.075 28.3636V40H117.376V28.3636H119.075ZM123.901 40.1932C123.348 40.1932 122.848 40.0909 122.401 39.8864C121.954 39.678 121.599 39.3769 121.338 38.983C121.08 38.589 120.952 38.1061 120.952 37.5341C120.952 37.0417 121.046 36.6364 121.236 36.3182C121.425 36 121.681 35.7481 122.003 35.5625C122.325 35.3769 122.685 35.2367 123.082 35.142C123.48 35.0473 123.885 34.9754 124.298 34.9261C124.821 34.8655 125.245 34.8163 125.571 34.7784C125.897 34.7367 126.134 34.6705 126.281 34.5795C126.429 34.4886 126.503 34.3409 126.503 34.1364V34.0966C126.503 33.6004 126.363 33.2159 126.082 32.9432C125.806 32.6705 125.393 32.5341 124.844 32.5341C124.272 32.5341 123.821 32.661 123.491 32.9148C123.166 33.1648 122.94 33.4432 122.815 33.75L121.219 33.3864C121.408 32.8561 121.685 32.428 122.048 32.1023C122.416 31.7727 122.838 31.5341 123.315 31.3864C123.793 31.2348 124.295 31.1591 124.821 31.1591C125.17 31.1591 125.539 31.2008 125.929 31.2841C126.323 31.3636 126.69 31.5114 127.031 31.7273C127.376 31.9432 127.658 32.2519 127.878 32.6534C128.098 33.0511 128.207 33.5682 128.207 34.2045V40H126.548V38.8068H126.48C126.37 39.0265 126.205 39.2424 125.986 39.4545C125.766 39.6667 125.484 39.8428 125.139 39.983C124.795 40.1231 124.382 40.1932 123.901 40.1932ZM124.27 38.8295C124.74 38.8295 125.141 38.7367 125.474 38.5511C125.812 38.3655 126.067 38.1231 126.241 37.8239C126.42 37.5208 126.509 37.197 126.509 36.8523V35.7273C126.448 35.7879 126.33 35.8447 126.156 35.8977C125.986 35.947 125.791 35.9905 125.571 36.0284C125.351 36.0625 125.137 36.0947 124.929 36.125C124.721 36.1515 124.546 36.1742 124.406 36.1932C124.077 36.2348 123.776 36.3049 123.503 36.4034C123.234 36.5019 123.018 36.6439 122.855 36.8295C122.696 37.0114 122.616 37.2538 122.616 37.5568C122.616 37.9773 122.772 38.2955 123.082 38.5114C123.393 38.7235 123.789 38.8295 124.27 38.8295ZM131.232 43.2727C130.978 43.2727 130.747 43.2519 130.538 43.2102C130.33 43.1723 130.175 43.1307 130.072 43.0852L130.482 41.6932C130.792 41.7765 131.069 41.8125 131.311 41.8011C131.554 41.7898 131.768 41.6989 131.953 41.5284C132.143 41.358 132.309 41.0795 132.453 40.6932L132.663 40.1136L129.47 31.2727H131.288L133.499 38.0455H133.589L135.8 31.2727H137.624L134.027 41.1648C133.86 41.6193 133.648 42.0038 133.391 42.3182C133.133 42.6364 132.826 42.875 132.47 43.0341C132.114 43.1932 131.701 43.2727 131.232 43.2727ZM144.608 28.3636L147.847 37.8409H147.977L151.216 28.3636H153.114L148.926 40H146.898L142.71 28.3636H144.608ZM154.658 40V31.2727H156.357V40H154.658ZM155.516 29.9261C155.22 29.9261 154.966 29.8277 154.754 29.6307C154.546 29.4299 154.442 29.1913 154.442 28.9148C154.442 28.6345 154.546 28.3958 154.754 28.1989C154.966 27.9981 155.22 27.8977 155.516 27.8977C155.811 27.8977 156.063 27.9981 156.271 28.1989C156.483 28.3958 156.589 28.6345 156.589 28.9148C156.589 29.1913 156.483 29.4299 156.271 29.6307C156.063 29.8277 155.811 29.9261 155.516 29.9261ZM161.909 40.1705C161.205 40.1705 160.576 39.9905 160.023 39.6307C159.473 39.267 159.042 38.75 158.727 38.0795C158.417 37.4053 158.261 36.5966 158.261 35.6534C158.261 34.7102 158.419 33.9034 158.733 33.233C159.051 32.5625 159.487 32.0492 160.04 31.6932C160.593 31.3371 161.22 31.1591 161.92 31.1591C162.462 31.1591 162.898 31.25 163.227 31.4318C163.561 31.6098 163.818 31.8182 164 32.0568C164.186 32.2955 164.33 32.5057 164.432 32.6875H164.534V28.3636H166.233V40H164.574V38.642H164.432C164.33 38.8277 164.182 39.0398 163.989 39.2784C163.799 39.517 163.538 39.7254 163.205 39.9034C162.871 40.0814 162.439 40.1705 161.909 40.1705ZM162.284 38.7216C162.773 38.7216 163.186 38.5928 163.523 38.3352C163.864 38.0739 164.121 37.7121 164.295 37.25C164.473 36.7879 164.562 36.25 164.562 35.6364C164.562 35.0303 164.475 34.5 164.301 34.0455C164.127 33.5909 163.871 33.2367 163.534 32.983C163.197 32.7292 162.78 32.6023 162.284 32.6023C161.773 32.6023 161.347 32.7348 161.006 33C160.665 33.2652 160.407 33.6269 160.233 34.0852C160.063 34.5436 159.977 35.0606 159.977 35.6364C159.977 36.2197 160.064 36.7443 160.239 37.2102C160.413 37.6761 160.67 38.0455 161.011 38.3182C161.356 38.5871 161.78 38.7216 162.284 38.7216ZM172.419 40.1761C171.559 40.1761 170.819 39.9924 170.197 39.625C169.58 39.2538 169.103 38.733 168.766 38.0625C168.432 37.3883 168.266 36.5985 168.266 35.6932C168.266 34.7992 168.432 34.0114 168.766 33.3295C169.103 32.6477 169.572 32.1155 170.175 31.733C170.781 31.3504 171.489 31.1591 172.3 31.1591C172.792 31.1591 173.269 31.2405 173.732 31.4034C174.194 31.5663 174.608 31.822 174.976 32.1705C175.343 32.5189 175.633 32.9716 175.845 33.5284C176.057 34.0814 176.163 34.7538 176.163 35.5455V36.1477H169.226V34.875H174.499C174.499 34.428 174.408 34.0322 174.226 33.6875C174.044 33.339 173.788 33.0644 173.459 32.8636C173.133 32.6629 172.75 32.5625 172.311 32.5625C171.834 32.5625 171.417 32.6799 171.061 32.9148C170.709 33.1458 170.436 33.4489 170.243 33.8239C170.054 34.1951 169.959 34.5985 169.959 35.0341V36.0284C169.959 36.6117 170.061 37.108 170.266 37.517C170.474 37.9261 170.764 38.2386 171.135 38.4545C171.506 38.6667 171.94 38.7727 172.436 38.7727C172.758 38.7727 173.052 38.7273 173.317 38.6364C173.582 38.5417 173.811 38.4015 174.004 38.2159C174.197 38.0303 174.345 37.8011 174.447 37.5284L176.055 37.8182C175.927 38.2917 175.696 38.7064 175.362 39.0625C175.033 39.4148 174.618 39.6894 174.118 39.8864C173.622 40.0795 173.055 40.1761 172.419 40.1761ZM181.724 40.1761C180.906 40.1761 180.192 39.9886 179.582 39.6136C178.973 39.2386 178.499 38.714 178.162 38.0398C177.825 37.3655 177.656 36.5777 177.656 35.6761C177.656 34.7708 177.825 33.9792 178.162 33.3011C178.499 32.6231 178.973 32.0966 179.582 31.7216C180.192 31.3466 180.906 31.1591 181.724 31.1591C182.543 31.1591 183.257 31.3466 183.866 31.7216C184.476 32.0966 184.95 32.6231 185.287 33.3011C185.624 33.9792 185.793 34.7708 185.793 35.6761C185.793 36.5777 185.624 37.3655 185.287 38.0398C184.95 38.714 184.476 39.2386 183.866 39.6136C183.257 39.9886 182.543 40.1761 181.724 40.1761ZM181.73 38.75C182.26 38.75 182.7 38.6098 183.048 38.3295C183.397 38.0492 183.654 37.6761 183.821 37.2102C183.991 36.7443 184.077 36.2311 184.077 35.6705C184.077 35.1136 183.991 34.6023 183.821 34.1364C183.654 33.6667 183.397 33.2898 183.048 33.0057C182.7 32.7216 182.26 32.5795 181.73 32.5795C181.196 32.5795 180.753 32.7216 180.401 33.0057C180.052 33.2898 179.793 33.6667 179.622 34.1364C179.455 34.6023 179.372 35.1136 179.372 35.6705C179.372 36.2311 179.455 36.7443 179.622 37.2102C179.793 37.6761 180.052 38.0492 180.401 38.3295C180.753 38.6098 181.196 38.75 181.73 38.75Z"
-                  fill="white"
-                />
-                <path
-                  opacity="0.45"
-                  d="M86 12H56V14H86V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M86 56H56V58H86V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M51 7C46.1191 3.58873 40.9135 2.35207 35 2.00004C29.0865 1.648 23.5605 3.00323 18.3211 5.81203C13.0817 8.62084 8.69816 12.8327 5.64507 17.9917C2.59199 23.1507 0.985693 29.0602 1.0001 35.0803C1.0145 41.1005 2.64905 47.002 5.72678 52.1458C8.80452 57.2896 13.2082 61.4798 18.4609 64.2627C23.7137 67.0456 29.6155 68.3151 35.5272 67.9339C41.439 67.5526 47.1355 65.4354 52 62"
-                  stroke="#05C2DF"
-                  stroke-width="2"
-                  stroke-miterlimit="1.51696"
-                />
-                <path
-                  d="M34.0306 61.1555C48.6177 61.1555 60.4429 49.3649 60.4429 34.8204C60.4429 20.276 48.6177 8.48535 34.0306 8.48535C19.4434 8.48535 7.61816 20.276 7.61816 34.8204C7.61816 49.3649 19.4434 61.1555 34.0306 61.1555Z"
-                  stroke="#05C2DF"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  class="play-button-path"
-                  d="M45 35L27.75 45.3923L27.75 24.6077L45 35Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M91 12H89V14H91V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M88 12H86V14H88V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M94 12H92V14H94V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M97 12H95V14H97V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M100 12H98V14H100V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M104 12H102V14H104V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M108 12H106V14H108V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M112 12H110V14H112V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M117 12H115V14H117V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M122 12H120V14H122V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M127 12H125V14H127V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M132 12H130V14H132V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M137 12H135V14H137V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M142 12H140V14H142V12Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M153.6 12.2305H152V13.8305H153.6V12.2305Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M159.6 12.2305H158V13.8305H159.6V12.2305Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M165.6 12.2305H164V13.8305H165.6V12.2305Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M171.3 12.4297H170V13.7297H171.3V12.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M178.3 12.4297H177V13.7297H178.3V12.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M185.3 12.4297H184V13.7297H185.3V12.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M192.3 12.4297H191V13.7297H192.3V12.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M200.3 12.4297H199V13.7297H200.3V12.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M209.3 12.4297H208V13.7297H209.3V12.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M147.6 12.2305H146V13.8305H147.6V12.2305Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M221 12.5H220V13.5H221V12.5Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M91 56H89V58H91V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M88 56H86V58H88V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M94 56H92V58H94V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M97 56H95V58H97V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M100 56H98V58H100V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M104 56H102V58H104V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M108 56H106V58H108V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M112 56H110V58H112V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M117 56H115V58H117V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M122 56H120V58H122V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M127 56H125V58H127V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M132 56H130V58H132V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M137 56H135V58H137V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M142 56H140V58H142V56Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M153.6 56.2305H152V57.8305H153.6V56.2305Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M159.6 56.2305H158V57.8305H159.6V56.2305Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M165.6 56.2305H164V57.8305H165.6V56.2305Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M171.3 56.4297H170V57.7297H171.3V56.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M178.3 56.4297H177V57.7297H178.3V56.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M185.3 56.4297H184V57.7297H185.3V56.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M192.3 56.4297H191V57.7297H192.3V56.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M200.3 56.4297H199V57.7297H200.3V56.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M209.3 56.4297H208V57.7297H209.3V56.4297Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M147.6 56.2305H146V57.8305H147.6V56.2305Z"
-                  fill="#05C2DF"
-                />
-                <path
-                  opacity="0.45"
-                  d="M221 56.5H220V57.5H221V56.5Z"
-                  fill="#05C2DF"
-                />
-              </svg>
-            </button>
-          </div>
+          <span class="header__price">10$</span>
         </div>
       </div>
 
-      <div class="container">
-        <div class="header__bottom">
-          <div class="header__bottom-menu">
-            <ul class="header__bottom-list">
-              <li class="header__bottom-item">
+    </header>
+
+    <div class="help aside"
+      id="helpHoney"
+     >
+      <!--<div class="container container__aside">-->
+        <div class="menu__page">
+          <a
+            href="#"
+            class="header__logo"
+          >
+            <img
+            class="header__logo-img"
+            src="icons/logo-small.png"
+            alt="logo"
+            />
+          </a>
+
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item menu__item-menu">
                 <a
-                  class="header__bottom-link"
+                  class="menu__link"
+                  href="#about"
+                >
+                  About
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu menu__item--tech">
+                <a
+                  class="menu__link"
+                  href="#tech"
+                >
+                  For you
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#products"
+                >
+                  Category
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </li>
+              <!--<li class="menu__item">
+                <a
+                  class="menu__link menu__item-lang"
+                  href="#lang"
+                >
+                  Language
+                </a>
+              </li>-->
+            </ul>
+          </nav>
+
+
+          <div class="wishlist">
+            <a
+              class="wishlist-link"
+              href="#wish"
+              >
+              <svg class="wishlist-icon" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+              <span class="wishlist-count wishlist-count--category">0</span>
+            </a>
+          </div>
+
+          <div class="main-button busket-button">
+            <a
+              class="header__bottom-link"
+              href="#buy"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="shopping-cart">
+                <path d="m23.433,4.915c-.477-.582-1.182-.915-1.934-.915H4.49l-.256-1.843c-.17-1.229-1.234-2.157-2.476-2.157H.5C.224,0,0,.224,0,.5s.224.5.5.5h1.259c.745,0,1.383.556,1.485,1.294l1.781,12.825c.308,2.212,2.225,3.881,4.457,3.881h10.018c.276,0,.5-.224.5-.5s-.224-.5-.5-.5h-10.018c-1.73,0-3.214-1.289-3.462-3h12.64c2.138,0,3.993-1.521,4.412-3.617l.879-4.393c.147-.738-.042-1.494-.519-2.075Zm-.462,1.879l-.879,4.393c-.326,1.63-1.77,2.813-3.432,2.813H5.879l-1.25-9h16.87c.451,0,.874.2,1.16.549.286.349.399.803.312,1.245Zm-15.971,13.206c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Zm10-3c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Z"/>
+              </svg>
+            </a>
+            <span class="basket-count">0</span>
+          </div>
+
+
+          <a
+            href="#products"
+            class="icon aside--close aside-help"
+          ></a>
+        </div>
+
+        <div class="category-section">
+          <!-- Назва категорії -->
+          <h1 class="category-title">Honey products</h1>
+
+            <!-- Сітка з товарами -->
+          <div class="products-grid1">
+              <!-- Товар 1 -->
+            <div class="product-card1">
+
+              <svg class="product-wishlist product-wishlist--category"
+                data-id="1"
+                data-photo="./images/linden_honey.jpg"
+                data-name="Linden honey"
+                data-price="350"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="grey" stroke-width="2">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+
+              <img class="product-image1" src="./images/linden_honey.jpg" alt="images basswood honey" >
+              <h3 class="product-title1">Linden honey12</h3>
+              <p
+                class="product-price1">350 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#faq"
+                  class="buy-btn product-learnMore"
+                  data-id="1"
+                data-photo="./images/linden_honey.jpg"
+                data-name="Linden honey"
+                data-price="350">
+                    Learn more
+                </a>
+                <a
+                  href="#buy"
+                  class="add-to-cart1"
+                  data-id="11"
+                  data-name="Linden honey"
+                  data-price="350">
+                  add to cart
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card1">
+
+              <svg class="product-wishlist product-wishlist--category"
+                data-id="2"
+                data-photo="./images/may_honey.jpg"
+                data-name="May honey"
+                data-price="280"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="grey" stroke-width="2">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+
+              <img src="./images/may_honey.jpg" alt="images of may honey" class="product-image1">
+              <h3 class="product-title1">May honey</h3>
+              <p
+                class="product-price1">280 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#faq2"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                  href="#buy"
+                  class="add-to-cart1"
+                  data-id="12"
+                  data-name="May honey"
+                  data-price="280">
+                  add to cart
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card1">
+
+              <svg class="product-wishlist product-wishlist--category"
+                data-id="3"
+                data-photo="./images/acacia_honey.jpg"
+                data-name="Acacia honey"
+                data-price="300"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="grey" stroke-width="2">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+
+              <img src="./images/acacia_honey.jpg" alt="images of acacia honey" class="product-image1">
+              <h3 class="product-title1">Acacia honey</h3>
+              <p
+                class="product-price1">300 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#faq3"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                  href="#buy"
+                  class="add-to-cart1"
+                  data-id="13"
+                  data-name="Acacia honey"
+                  data-price="300">
+                  add to cart
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card1">
+
+              <svg class="product-wishlist product-wishlist--category"
+                data-id="4"
+                data-photo="./images/sunflower_honey.jpg"
+                data-name="sunflower honey"
+                data-price="250"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="grey" stroke-width="2">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+
+              <img src="./images/sunflower_honey.jpg" alt="images of sunflower honey" class="product-image1">
+              <h3 class="product-title1">Sunflower honey</h3>
+              <p
+                class="product-price1">250 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#faq4"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                  href="#buy"
+                  class="add-to-cart1"
+                  data-id="14"
+                  data-name="Sunflower honey"
+                  data-price="250">
+                  add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<div class="help__contact">
+          <a href="tel:+86-0571-86105373">+86-0571-86105373</a>
+          <a href="mailto:global@katvr.com">global@katvr.com</a>
+          <a href="mailto:overseas@katvr.com">overseas@katvr.com</a>
+        </div>
+        </div>-->
+      <!--</div>-->
+      <footer class="footer footer__category">
+        <div class="container">
+          <div class="footer__container">
+
+            <div class="footer__logo">
+              <a
+                class="header__logo"
+                href="#"
+              >
+                <img
+                  class="header__logo-img footer__logo-img"
+                  src="icons/logo-small.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="footer__wish">
+              <div class="footer__menu">
+                <nav class="footer__menu-nav">
+                  <ul class="footer__menu-list">
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#about"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#tech"
+                      >
+                        For you
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#products"
+                      >
+                        Category
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#"
+                      >
+                        Delivery
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#"
+                      >
+                        Return of goods
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="footer__contact">
+                <h3 class="footer__title">contact us</h3>
+
+                <address class="contact__address">
+                  213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name
+
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="tel:+86-0571-86105373">
+                        +86-0571-86105373
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="mailto:global@katvr.com">
+                        global@katvr.com
+                      </a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </div>
+            <div class="footer__social">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com"
+                target="_blank"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./icons/social/footer-facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.twitter.com"
+                target="_blank"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./icons/social/footer-twitter.svg"
+                  alt="Twitter"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.youtube.com"
+                target="_blank"
+              >
+                <img
+                  src="./icons/social/footer-youtube.svg"
+                  alt="YouTube"
+                  class="footer__social-icon"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.reddit.com"
+                target="_blank"
+              >
+                <img
+                  src="./icons/social/footer-redit.svg"
+                  alt="Reddit"
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--<div class="help aside"
+      id="helpWax"
+      >
+      <div class="container container__aside">
+        <div class="menu__page">
+          <a
+            href="#"
+            class="header__logo"
+          >
+            <img
+            class="header__logo-img"
+            src="icons/logo-small.png"
+            alt="logo"
+            />
+          </a>
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#about"
+                >
+                  About
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#tech"
+                >
+                  For you
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#products"
+                >
+                  Category
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  class="menu__link menu__item-lang"
+                  href="#lang"
+                >
+                  Language
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  class="menu__link menu__item-faq"
                   href="#faq"
                 >
                   FAQ
                 </a>
               </li>
-              <li class="header__bottom-item">
+              <li class="menu__item">
                 <a
-                  class="header__bottom-link"
+                  class="menu__link menu__item-help"
                   href="#help"
                 >
                   Help
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="header__bottom-more">
-            <a
-              class="header__bottom-more-link"
-              href="#more"
-            >
-              More
-            </a>
-            <div class="header__bottom-arrow">
-              <svg
-                class="lang-switcher__arrow"
-                width="9"
-                height="6"
-                viewBox="0 0 9 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0L5 6L10 0H0Z"
-                  fill="#fff"
-                />
-              </svg>
+          </nav>
+          <a
+          href="#products"
+          class="icon aside--close aside-help"
+          ></a>
+        </div>
+
+        <div class="category-section">
+
+          <h1 class="category-title">Wax products</h1>
+          <div class="products-grid1">
+           <div class="product-card1">
+              <img src="./images/basswood__honey.png" alt="Мед евкаліптовий" class="product-image1">
+              <h3 class="product-title1">Мед евкаліптовий</h3>
+              <p
+                class="product-price1">2000 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                  href="#buy"
+                  class="add-to-cart1">add to card
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="header__bottom-slider">
-            <button
-              class="header__bottom-slider-but header__bottom-slider-but--prev"
-              aria-label="Previous slide"
-            >
-              Previous
-            </button>
-            <button
-              class="header__bottom-slider-but header__bottom-slider-but--current"
-              aria-label="Current slide"
-            >
-              Curent
-            </button>
-            <button
-              class="header__bottom-slider-but header__bottom-slider-but--next"
-              aria-label="Next slide"
-            >
-              Next
-            </button>
+
+            <div class="product-card1">
+              <img src="./images/basswood__honey.png" alt="Мед евкаліптовий" class="product-image1">
+              <h3 class="product-title1">May honey</h3>
+              <p
+                class="product-price1">2000 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                  href="#buy"
+                  class="add-to-cart1">Додати до кошику
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card1">
+              <img src="./images/basswood__honey.png" alt="Мед евкаліптовий" class="product-image1">
+              <h3 class="product-title1">Мед евкаліптовий</h3>
+              <p
+                class="product-price1">2000 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                  href="#buy"
+                  class="add-to-cart1">Додати до кошику
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card1">
+              <img src="./images/basswood__honey.png" alt="Мед евкаліптовий" class="product-image1">
+              <h3 class="product-title1">Мед евкаліптовий</h3>
+              <p
+                class="product-price1">2000 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                  href="#buy"
+                  class="add-to-cart1">add to card
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
+
+        <div class="help__contact">
+          <a href="tel:+86-0571-86105373">+86-0571-86105373</a>
+          <a href="mailto:global@katvr.com">global@katvr.com</a>
+          <a href="mailto:overseas@katvr.com">overseas@katvr.com</a>
+        </div>
       </div>
-    </header>
+    </div>-->
 
-    <div class="main-button">
-      <a
-        href="#buy"
-        class="main-button__link"
+    <!--<div class="help aside"
+      id="helpRest"
       >
-        Buy Now
-      </a>
-    </div>
+      <div class="container container__aside">
 
-    <aside
-      class="menu menu-decktop"
-      id="menu"
-    >
-      <div class="container">
-        <div class="menu__wrapper">
+        <div class="menu__page">
           <a
             href="#"
-            class="icon menu--close icon-close--menu"
-          ></a>
-
-          <div class="menu__bottom">
-            <nav class="menu__nav">
-              <ul class="menu__list">
-                <li class="menu__item menu__item-menu">
-                  <a
-                    class="menu__link"
-                    href="#about"
-                  >
-                    About
-                  </a>
-                </li>
-                <li class="menu__item menu__item-menu">
-                  <a
-                    class="menu__link"
-                    href="#tech"
-                  >
-                    Tech
-                  </a>
-                </li>
-                <li class="menu__item menu__item-menu">
-                  <a
-                    class="menu__link"
-                    href="#benefits"
-                  >
-                    Benefits
-                  </a>
-                </li>
-                <li class="menu__item menu__item-menu">
-                  <a
-                    class="menu__link"
-                    href="#contact"
-                  >
-                    Contact
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a
-                    class="menu__link menu__item-lang"
-                    href="#lang"
-                  >
-                    Language
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a
-                    class="menu__link menu__item-faq"
-                    href="#faq"
-                  >
-                    FAQ
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a
-                    class="menu__link menu__item-help"
-                    href="#help"
-                  >
-                    Help
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </aside>
-
-    <aside
-      class="help aside"
-      id="help"
-    >
-      <div class="container container__aside">
-        <div class="menu__wrapper">
-          <a
-            href="#menu"
-            class="icon aside--close aside-help"
-          ></a>
-
-          <h2 class="help__title aside__title">
-            HOW CAN WE
-            <span class="aside__title--accent">HELP</span>
-            YOU?
-          </h2>
-          <p class="aside__text">
-            Welcome to our help center. Our goal is to make the process of
-          </p>
-          <p class="help__text aside__text">
-            getting acquainted and purchase as easy and pleasant as possible.
-            Need help with your KAT VR loco product? Many product questions can
-            be resolved by reviewing our Product Support
-            <a
-              class="help__text--link"
-              href="#faq"
-            >
-              FAQs.
-            </a>
-          </p>
-          <p class="help__text aside__text">
-            Please also feel free to
-            <a
-              class="help__text--link"
-              href="#contact"
-            >
-              Contact Us
-            </a>
-            directly should you need anything further. We’re happy to help.
-          </p>
-
-          <div class="help__links">
-            <a
-              class="help__link"
-              href="#"
-            >
-              Instruction manual
-            </a>
-            <a
-              class="help__link"
-              href="#"
-            >
-              Where to go for a warranty
-            </a>
-            <a
-              class="help__link"
-              href="#"
-            >
-              Service Policy
-            </a>
-          </div>
-          <div class="help__contact">
-            <a href="tel:+86-0571-86105373">+86-0571-86105373</a>
-            <a href="mailto:global@katvr.com">global@katvr.com</a>
-            <a href="mailto:overseas@katvr.com">overseas@katvr.com</a>
-          </div>
-        </div>
-      </div>
-    </aside>
-
-    <aside
-      class="faq aside"
-      id="faq"
-    >
-      <div class="container container__aside">
-        <div class="menu__wrapper">
-          <a
-            href="#menu"
-            class="icon aside--close aside-faq"
-          ></a>
-
-          <div class="faq__content aside__content">
-            <h2 class="faq__title aside__title">
-              FREQUENTLY ASKED
-              <span class="aside__title--accent">QUESTIONS</span>
-            </h2>
-
-            <div class="faq__block">
-              <details>
-                <summary class="faq__subtitle">
-                  What makes KAT loco different from other systems?
-                  <span class="faq__arrow"></span>
-                </summary>
-                <div class="faq__text-wrapper">
-                  <p class="faq__text">
-                    Despite being approached from many different angles, all
-                    traditional VR Locomotion systems including roomscale,
-                    teleportation, and free locomotion failed to provide an
-                    optimal solution capable of integrating high immersion with
-                    convenience. KAT loco does all of that without repeating
-                    their flaws. Our system offers a complete and versatile
-                    solution for an affordable price what makes it a perfect
-                    choice for home-use. It is also 100% user friendly,
-                    wireless, universally compatible, and more! It even offers
-                    decoupled head and body directions!
-                  </p>
-                  <p class="faq__data">
-                    Last updated: Wed, June 12 2019 7:07 PM UTC +03:00
-                  </p>
-                </div>
-              </details>
-            </div>
-            <div class="faq__block">
-              <details>
-                <summary class="faq__subtitle">
-                  Will it decrease my motion sickness?
-                  <span class="faq__arrow"></span>
-                </summary>
-                <div class="faq__text-wrapper">
-                  <p class="faq__text">
-                    Despite being approached from many different angles, all
-                    traditional VR Locomotion systems including roomscale,
-                    teleportation, and free locomotion failed to provide an
-                    optimal solution capable of integrating high immersion with
-                    convenience. KAT loco does all of that without repeating
-                    their flaws. Our system offers a complete and versatile
-                    solution for an affordable price what makes it a perfect
-                    choice for home-use. It is also 100% user friendly,
-                    wireless, universally compatible, and more! It even offers
-                    decoupled head and body directions!
-                  </p>
-                  <p class="faq__data">
-                    Last updated: Wed, June 12 2019 7:07 PM UTC +03:00
-                  </p>
-                </div>
-              </details>
-            </div>
-            <div class="faq__block">
-              <details>
-                <summary class="faq__subtitle">
-                  Which VR headsets is it compatible with?
-                  <span class="faq__arrow"></span>
-                </summary>
-                <div class="faq__text-wrapper">
-                  <p class="faq__text">
-                    Despite being approached from many different angles, all
-                    traditional VR Locomotion systems including roomscale,
-                    teleportation, and free locomotion failed to provide an
-                    optimal solution capable of integrating high immersion with
-                    convenience. KAT loco does all of that without repeating
-                    their flaws. Our system offers a complete and versatile
-                    solution for an affordable price what makes it a perfect
-                    choice for home-use. It is also 100% user friendly,
-                    wireless, universally compatible, and more! It even offers
-                    decoupled head and body directions!
-                  </p>
-                  <p class="faq__data">
-                    Last updated: Wed, June 12 2019 7:07 PM UTC +03:00
-                  </p>
-                </div>
-              </details>
-            </div>
-            <div class="faq__block">
-              <details>
-                <summary class="faq__subtitle">
-                  Is it compatible with Oculus Quest?
-                  <span class="faq__arrow"></span>
-                </summary>
-                <div class="faq__text-wrapper">
-                  <p class="faq__text">
-                    Despite being approached from many different angles, all
-                    traditional VR Locomotion systems including roomscale,
-                    teleportation, and free locomotion failed to provide an
-                    optimal solution capable of integrating high immersion with
-                    convenience. KAT loco does all of that without repeating
-                    their flaws. Our system offers a complete and versatile
-                    solution for an affordable price what makes it a perfect
-                    choice for home-use. It is also 100% user friendly,
-                    wireless, universally compatible, and more! It even offers
-                    decoupled head and body directions!
-                  </p>
-                  <p class="faq__data">
-                    Last updated: Wed, June 12 2019 7:07 PM UTC +03:00
-                  </p>
-                </div>
-              </details>
-            </div>
-            <div class="faq__bottom-more header__bottom-more">
-              <a
-                class="faq__bottom-more-link header__bottom-more-link"
-                href="#more"
-              >
-                More
-              </a>
-              <div class="faq__bottom-arrow header__bottom-arrow">
-                <svg
-                  class="faq-switcher__arrow lang-switcher__arrow"
-                  width="9"
-                  height="6"
-                  viewBox="0 0 9 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+            class="header__logo"
+          >
+            <img
+            class="header__logo-img"
+            src="icons/logo-small.png"
+            alt="logo"
+            />
+          </a>
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#about"
                 >
-                  <path
-                    d="M0 0L5 6L10 0H0Z"
-                    fill="#00c4cc"
-                  />
+                  About
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#tech"
+                >
+                  For you
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#products"
+                >
+                  Category
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  class="menu__link menu__item-lang"
+                  href="#lang"
+                >
+                  Language
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  class="menu__link menu__item-faq"
+                  href="#faq"
+                >
+                  FAQ
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  class="menu__link menu__item-help"
+                  href="#help"
+                >
+                  Help
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a
+          href="#products"
+          class="icon aside--close aside-help"
+          ></a>
+        </div>
+
+        <div class="category-section">
+
+          <h1 class="category-title">products for rest</h1>
+
+
+          <div class="products-grid1">
+
+            <div class="product-card1">
+              <img src="./images/basswood__honey.png" alt="Мед евкаліптовий" class="product-image1">
+              <h3 class="product-title1">Мед евкаліптовий</h3>
+              <p
+                class="product-price1">2500 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                    href="#buy"
+                    class="add-to-cart1">add to card
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card1">
+              <img src="./images/basswood__honey.png" alt="Мед евкаліптовий" class="product-image1">
+              <h3 class="product-title1">Мед евкаліптовий</h3>
+              <p
+                class="product-price1">2500 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                    href="#buy"
+                    class="add-to-cart1">add to card
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card1">
+              <img src="./images/basswood__honey.png" alt="Мед евкаліптовий" class="product-image1">
+              <h3 class="product-title1">Мед евкаліптовий</h3>
+              <p
+                class="product-price1">2500 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                    href="#buy"
+                    class="add-to-cart1">add to card
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card1">
+              <img src="./images/basswood__honey.png" alt="Мед евкаліптовий" class="product-image1">
+              <h3 class="product-title1">Мед евкаліптовий</h3>
+              <p
+                class="product-price1">2500 грн
+              </p>
+              <div class ="product-link">
+                <a
+                  href="#"
+                  class="buy-btn product-learnMore">
+                    Learn more
+                </a>
+                <a
+                    href="#buy"
+                    class="add-to-cart1">add to card
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="help__contact">
+          <a href="tel:+86-0571-86105373">+86-0571-86105373</a>
+          <a href="mailto:global@katvr.com">global@katvr.com</a>
+          <a href="mailto:overseas@katvr.com">overseas@katvr.com</a>
+        </div>
+      </div>
+    </div>-->
+
+    <div class="faq aside"
+      id="faq"
+     >
+
+      <div class="menu__page">
+        <a
+          href="#"
+          class="header__logo"
+        >
+          <img
+          class="header__logo-img"
+          src="icons/logo-small.png"
+          alt="logo"
+          />
+        </a>
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#about"
+              >
+                About
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu menu__item--tech">
+              <a
+                class="menu__link"
+                href="#tech"
+              >
+                For you
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#products"
+              >
+                Category
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#contact"
+              >
+                Contact
+              </a>
+            </li>
+            <!--<li class="menu__item">
+              <a
+                class="menu__link menu__item-lang"
+                href="#lang"
+              >
+                Language
+              </a>
+            </li>-->
+          </ul>
+        </nav>
+
+        <div class="wishlist">
+          <a
+            class="wishlist-link"
+            href="#wish"
+            >
+            <svg class="wishlist-icon" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="wishlist-count wishlist-count--category">0</span>
+            </a>
+        </div>
+        <div class="main-button busket-button">
+          <a
+            class="header__bottom-link"
+            href="#buy"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="shopping-cart">
+              <path d="m23.433,4.915c-.477-.582-1.182-.915-1.934-.915H4.49l-.256-1.843c-.17-1.229-1.234-2.157-2.476-2.157H.5C.224,0,0,.224,0,.5s.224.5.5.5h1.259c.745,0,1.383.556,1.485,1.294l1.781,12.825c.308,2.212,2.225,3.881,4.457,3.881h10.018c.276,0,.5-.224.5-.5s-.224-.5-.5-.5h-10.018c-1.73,0-3.214-1.289-3.462-3h12.64c2.138,0,3.993-1.521,4.412-3.617l.879-4.393c.147-.738-.042-1.494-.519-2.075Zm-.462,1.879l-.879,4.393c-.326,1.63-1.77,2.813-3.432,2.813H5.879l-1.25-9h16.87c.451,0,.874.2,1.16.549.286.349.399.803.312,1.245Zm-15.971,13.206c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Zm10-3c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Z"/>
+            </svg>
+          </a>
+          <span class="basket-count">0</span>
+        </div>
+
+
+        <a
+        href="#helpHoney"
+        class="icon aside--close aside-help"
+        ></a>
+      </div>
+      <div class="container container__aside prod__container">
+        <div class = 'prod-container'>
+          <div class="prod-card">
+            <!-- Зображення товару -->
+            <div class="prod-infoLeft">
+              <svg class="prod-wishlist"
+                data-id="1"
+                data-photo="./images/linden_honey.jpg"
+                data-name="Linden honey"
+                data-price="350" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="grey" stroke-width="2">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+              <img src="./images/linden_honey.jpg" alt="images a jar linden honey" class="prod-image">
+
+              <!-- Заголовок товару -->
+              <h2 class="prod-title">linden honey</h2>
+            </div>
+            <div class = 'prod-info'>
+
+              <!-- Категорія з посиланням -->
+              <div class="prod-category">
+                Category: <a href="#helpHoney">Honey products</a>
+              </div>
+
+              <!-- Короткий опис -->
+              <p class="prod-description">Natural linden honey with a lavender aroma,
+                  medium sweetness, and amber color. Ideal for tea or other beverages.</p>
+
+              <!-- Характеристики -->
+              <div class="prod-features">
+                <h4> Characteristics:</h4>
+                  <ul>
+                    <li>Vaga: 1000 g </li>
+                    <li>Pokhodzhennya: Ukraine </li>
+                    <li>Warehouse: 100% natural honey</li>
+                  </ul>
+              </div>
+              <!-- Ціна -->
+              <div class="prod-price">350</div>
+              <!-- Кнопка додавання до кошику -->
+              <a
+                href="#buy"
+                class="add-to-cart1"
+                data-id="11"
+                data-name="Linden Honey"
+                data-price="350">
+                add to cart
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer__category">
+        <div class="container">
+          <div class="footer__container">
+
+            <div class="footer__logo">
+              <a
+                class="header__logo"
+                href="#"
+              >
+                <img
+                  class="header__logo-img footer__logo-img"
+                  src="icons/logo-small.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="footer__wish">
+              <div class="footer__menu">
+                <nav class="footer__menu-nav">
+                  <ul class="footer__menu-list">
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#about"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#tech"
+                      >
+                        For you
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#products"
+                      >
+                        Category
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#"
+                      >
+                        Delivery
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#"
+                      >
+                        Return of goods
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="footer__contact">
+                <h3 class="footer__title">contact us</h3>
+
+                <address class="contact__address">
+                  213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name
+
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="tel:+86-0571-86105373">
+                        +86-0571-86105373
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="mailto:global@katvr.com">
+                        global@katvr.com
+                      </a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </div>
+            <div class="footer__social">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com"
+                target="_blank"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./icons/social/footer-facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.twitter.com"
+                target="_blank"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./icons/social/footer-twitter.svg"
+                  alt="Twitter"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.youtube.com"
+                target="_blank"
+              >
+                <img
+                  src="./icons/social/footer-youtube.svg"
+                  alt="YouTube"
+                  class="footer__social-icon"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.reddit.com"
+                target="_blank"
+              >
+                <img
+                  src="./icons/social/footer-redit.svg"
+                  alt="Reddit"
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <div class="faq aside"
+      id="faq2"
+     >
+      <div class="menu__page">
+        <a
+          href="#"
+          class="header__logo"
+        >
+          <img
+          class="header__logo-img"
+          src="icons/logo-small.png"
+          alt="logo"
+          />
+        </a>
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#about"
+              >
+                About
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu menu__item--tech">
+              <a
+                class="menu__link"
+                href="#tech"
+              >
+                For you
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#products"
+              >
+                Category
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#contact"
+              >
+                Contact
+              </a>
+            </li>
+            <!--<li class="menu__item">
+              <a
+                class="menu__link menu__item-lang"
+                href="#lang"
+              >
+                Language
+              </a>
+            </li>-->
+          </ul>
+        </nav>
+
+        <div class="wishlist">
+          <a
+            class="wishlist-link"
+            href="#wish"
+            >
+            <svg class="wishlist-icon" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="wishlist-count wishlist-count--category">0</span>
+          </a>
+
+        </div>
+        <div class="main-button busket-button">
+          <a
+            class="header__bottom-link"
+            href="#buy"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="shopping-cart">
+              <path d="m23.433,4.915c-.477-.582-1.182-.915-1.934-.915H4.49l-.256-1.843c-.17-1.229-1.234-2.157-2.476-2.157H.5C.224,0,0,.224,0,.5s.224.5.5.5h1.259c.745,0,1.383.556,1.485,1.294l1.781,12.825c.308,2.212,2.225,3.881,4.457,3.881h10.018c.276,0,.5-.224.5-.5s-.224-.5-.5-.5h-10.018c-1.73,0-3.214-1.289-3.462-3h12.64c2.138,0,3.993-1.521,4.412-3.617l.879-4.393c.147-.738-.042-1.494-.519-2.075Zm-.462,1.879l-.879,4.393c-.326,1.63-1.77,2.813-3.432,2.813H5.879l-1.25-9h16.87c.451,0,.874.2,1.16.549.286.349.399.803.312,1.245Zm-15.971,13.206c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Zm10-3c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Z"/>
+            </svg>
+          </a>
+          <span class="basket-count">0</span>
+        </div>
+        <a
+        href="#helpHoney"
+        class="icon aside--close aside-help"
+        ></a>
+      </div>
+      <div class="container container__aside prod__container">
+          <div class = 'prod-container'>
+            <div class="prod-card">
+              <!-- Зображення товару -->
+              <div class="prod-infoLeft">
+                <svg class="prod-wishlist"
+                  data-id="2"
+                  data-name="May honey"
+                  data-price="280" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="grey" stroke-width="2">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
+                <img src="./images/may_honey.jpg" alt="images a jar of May honey" class="prod-image">
+                <h2 class="prod-title">May honey</h2>
+              </div>
+              <div class = 'prod-info'>
+
+                <div class="prod-category">
+                  Category: <a href="#helpHoney">Honey products</a>
+                </div>
+
+                <p class="prod-description">May honey is a delicate and aromatic product collected by bees
+                  in early spring from meadow grasses. It has a light amber color, a mild flavor, and a
+                  subtle floral note, ideal for strengthening the immune system and promoting overall health.
+                </p>
+
+                <div class="prod-features">
+                  <h4> Characteristics:</h4>
+                    <ul>
+                      <li>Vaga: 1000 g </li>
+                      <li>Pokhodzhennya: Ukraine </li>
+                      <li>Warehouse: 100% natural honey</li>
+                    </ul>
+                </div>
+                <div class="prod-price">280</div>
+                  <a href="#buy" class="add-to-cart1"
+                    data-id="12"
+                    data-name="May honey"
+                    data-price="400">
+                    add to cart
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+
+        <footer class="footer footer__category">
+          <div class="container">
+            <div class="footer__container">
+
+              <div class="footer__logo">
+                <a
+                  class="header__logo"
+                  href="#"
+                >
+                  <img
+                    class="header__logo-img footer__logo-img"
+                    src="icons/logo-small.png"
+                    alt="logo"
+                  />
+                </a>
+              </div>
+              <div class="footer__wish">
+                <div class="footer__menu">
+                  <nav class="footer__menu-nav">
+                    <ul class="footer__menu-list">
+                      <li class="footer__menu-item menu__item-menu">
+                        <a
+                          class="footer__menu-link"
+                          href="#about"
+                        >
+                          About
+                        </a>
+                      </li>
+                      <li class="footer__menu-item menu__item-menu">
+                        <a
+                          class="footer__menu-link"
+                          href="#tech"
+                        >
+                          For you
+                        </a>
+                      </li>
+                      <li class="footer__menu-item menu__item-menu">
+                        <a
+                          class="footer__menu-link"
+                          href="#products"
+                        >
+                          Category
+                        </a>
+                      </li>
+                      <li class="footer__menu-item menu__item-menu">
+                        <a
+                          class="footer__menu-link"
+                          href="#"
+                        >
+                          Delivery
+                        </a>
+                      </li>
+                      <li class="footer__menu-item menu__item-menu">
+                        <a
+                          class="footer__menu-link"
+                          href="#"
+                        >
+                          Return of goods
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div class="footer__contact">
+                  <h3 class="footer__title">contact us</h3>
+
+                  <address class="contact__address">
+                    213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name
+
+                    <ul class="contact__list">
+                      <li class="contact__item">
+                        <a class="contact__link" href="tel:+86-0571-86105373">
+                          +86-0571-86105373
+                        </a>
+                      </li>
+                    </ul>
+
+                    <ul class="contact__list">
+                      <li class="contact__item">
+                        <a class="contact__link" href="mailto:global@katvr.com">
+                          global@katvr.com
+                        </a>
+                      </li>
+                    </ul>
+                  </address>
+                </div>
+              </div>
+              <div class="footer__social">
+                <a
+                  class="footer__social-link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                >
+                  <img
+                    class="footer__social-icon"
+                    src="./icons/social/footer-facebook.svg"
+                    alt="Facebook"
+                  />
+                </a>
+
+                <a
+                  class="footer__social-link"
+                  href="https://www.twitter.com"
+                  target="_blank"
+                >
+                  <img
+                    class="footer__social-icon"
+                    src="./icons/social/footer-twitter.svg"
+                    alt="Twitter"
+                  />
+                </a>
+
+                <a
+                  class="footer__social-link"
+                  href="https://www.youtube.com"
+                  target="_blank"
+                >
+                  <img
+                    src="./icons/social/footer-youtube.svg"
+                    alt="YouTube"
+                    class="footer__social-icon"
+                  />
+                </a>
+
+                <a
+                  class="footer__social-link"
+                  href="https://www.reddit.com"
+                  target="_blank"
+                >
+                  <img
+                    src="./icons/social/footer-redit.svg"
+                    alt="Reddit"
+                    class="footer__social-icon"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="faq aside"
+      id="faq3"
+     >
+      <div class="menu__page">
+        <a
+          href="#"
+          class="header__logo"
+        >
+          <img
+          class="header__logo-img"
+          src="icons/logo-small.png"
+          alt="logo"
+          />
+        </a>
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#about"
+              >
+                About
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu menu__item--tech">
+              <a
+                class="menu__link"
+                href="#tech"
+              >
+                For you
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#products"
+              >
+                Category
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#contact"
+              >
+                Contact
+              </a>
+            </li>
+            <!--<li class="menu__item">
+              <a
+                class="menu__link menu__item-lang"
+                href="#lang"
+              >
+                Language
+              </a>
+            </li>-->
+          </ul>
+        </nav>
+
+        <div class="wishlist">
+          <a
+            class="wishlist-link"
+            href="#wish"
+            >
+            <svg class="wishlist-icon" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="wishlist-count wishlist-count--category">0</span>
+          </a>
+
+        </div>
+        <div class="main-button busket-button">
+          <a
+            class="header__bottom-link"
+            href="#buy"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="shopping-cart">
+              <path d="m23.433,4.915c-.477-.582-1.182-.915-1.934-.915H4.49l-.256-1.843c-.17-1.229-1.234-2.157-2.476-2.157H.5C.224,0,0,.224,0,.5s.224.5.5.5h1.259c.745,0,1.383.556,1.485,1.294l1.781,12.825c.308,2.212,2.225,3.881,4.457,3.881h10.018c.276,0,.5-.224.5-.5s-.224-.5-.5-.5h-10.018c-1.73,0-3.214-1.289-3.462-3h12.64c2.138,0,3.993-1.521,4.412-3.617l.879-4.393c.147-.738-.042-1.494-.519-2.075Zm-.462,1.879l-.879,4.393c-.326,1.63-1.77,2.813-3.432,2.813H5.879l-1.25-9h16.87c.451,0,.874.2,1.16.549.286.349.399.803.312,1.245Zm-15.971,13.206c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Zm10-3c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Z"/>
+            </svg>
+          </a>
+          <span class="basket-count">0</span>
+        </div>
+        <a
+        href="#helpHoney"
+        class="icon aside--close aside-help"
+        ></a>
+      </div>
+      <div class="container container__aside prod__container">
+
+        <div class = 'prod-container'>
+          <div class="prod-card">
+            <!-- Зображення товару -->
+            <div class="prod-infoLeft">
+              <svg class="prod-wishlist"
+                data-id="3"
+                data-name="Acacia honey"
+                data-price="300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="grey" stroke-width="2">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+              <img src="./images/acacia_honey.jpg" alt="images a jar of acacia honey" class="prod-image">
+              <h2 class="prod-title">Acacia honey</h2>
+            </div>
+
+            <div class = 'prod-info'>
+              <!-- Категорія з посиланням -->
+              <div class="prod-category">
+                Category: <a href="#helpHoney">Honey products</a>
+              </div>
+
+              <!-- Короткий опис -->
+              <p class="prod-description">Acacia honey is a crystal-clear and delicate variety harvested
+                from acacia flowers, renowned for its soft, sweet flavor without harsh notes. Its low
+                sugar content allows it to remain liquid for a long time, making it ideal for those with
+                sensitive stomachs or allergies to other honeys.</p>
+
+              <!-- Характеристики -->
+              <div class="prod-features">
+                <h4> Characteristics:</h4>
+                  <ul>
+                    <li>Vaga: 1000 g </li>
+                    <li>Pokhodzhennya: Ukraine </li>
+                    <li>Warehouse: 100% natural honey</li>
+                  </ul>
+              </div>
+              <!-- Ціна -->
+              <div class="prod-price">300</div>
+              <!-- Кнопка додавання до кошику -->
+              <a href="#buy" class="add-to-cart1"
+                data-id="13"
+                data-name="Acacia honey"
+                data-price="300">
+                add to cart
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </aside>
 
-    <aside
+      <footer class="footer footer__category">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__logo">
+              <a
+                class="header__logo"
+                href="#"
+              >
+                <img
+                  class="header__logo-img footer__logo-img"
+                  src="icons/logo-small.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="footer__wish">
+              <div class="footer__menu">
+                <nav class="footer__menu-nav">
+                  <ul class="footer__menu-list">
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#about"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#tech"
+                      >
+                        For you
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#products"
+                      >
+                        Category
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#"
+                      >
+                        Delivery
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#"
+                      >
+                        Return of goods
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="footer__contact">
+                <h3 class="footer__title">contact us</h3>
+
+                <address class="contact__address">
+                  213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name
+
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="tel:+86-0571-86105373">
+                        +86-0571-86105373
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="mailto:global@katvr.com">
+                        global@katvr.com
+                      </a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </div>
+            <div class="footer__social">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com"
+                target="_blank"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./icons/social/footer-facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.twitter.com"
+                target="_blank"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./icons/social/footer-twitter.svg"
+                  alt="Twitter"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.youtube.com"
+                target="_blank"
+              >
+                <img
+                  src="./icons/social/footer-youtube.svg"
+                  alt="YouTube"
+                  class="footer__social-icon"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.reddit.com"
+                target="_blank"
+              >
+                <img
+                  src="./icons/social/footer-redit.svg"
+                  alt="Reddit"
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <div class="faq aside"
+      id="faq4"
+     >
+      <div class="menu__page">
+        <a
+          href="#"
+          class="header__logo"
+        >
+          <img
+          class="header__logo-img"
+          src="icons/logo-small.png"
+          alt="logo"
+          />
+        </a>
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#about"
+              >
+                About
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu menu__item--tech">
+              <a
+                class="menu__link"
+                href="#tech"
+              >
+                For you
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#products"
+              >
+                Category
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#contact"
+              >
+                Contact
+              </a>
+            </li>
+            <!--<li class="menu__item">
+              <a
+                class="menu__link menu__item-lang"
+                href="#lang"
+              >
+                Language
+              </a>
+            </li>-->
+          </ul>
+        </nav>
+
+        <div class="wishlist">
+          <a
+            class="wishlist-link"
+            href="#wish"
+            >
+            <svg class="wishlist-icon" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="wishlist-count wishlist-count--category">0</span>
+          </a>
+        </div>
+
+        <div class="main-button busket-button">
+          <a
+            class="header__bottom-link"
+            href="#buy"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" class="shopping-cart">
+              <path d="m23.433,4.915c-.477-.582-1.182-.915-1.934-.915H4.49l-.256-1.843c-.17-1.229-1.234-2.157-2.476-2.157H.5C.224,0,0,.224,0,.5s.224.5.5.5h1.259c.745,0,1.383.556,1.485,1.294l1.781,12.825c.308,2.212,2.225,3.881,4.457,3.881h10.018c.276,0,.5-.224.5-.5s-.224-.5-.5-.5h-10.018c-1.73,0-3.214-1.289-3.462-3h12.64c2.138,0,3.993-1.521,4.412-3.617l.879-4.393c.147-.738-.042-1.494-.519-2.075Zm-.462,1.879l-.879,4.393c-.326,1.63-1.77,2.813-3.432,2.813H5.879l-1.25-9h16.87c.451,0,.874.2,1.16.549.286.349.399.803.312,1.245Zm-15.971,13.206c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Zm10-3c-1.103,0-2,.897-2,2s.897,2,2,2,2-.897,2-2-.897-2-2-2Zm0,3c-.552,0-1-.449-1-1s.448-1,1-1,1,.449,1,1-.448,1-1,1Z"/>
+            </svg>
+          </a>
+          <span class="basket-count">0</span>
+        </div>
+        <a
+        href="#helpHoney"
+        class="icon aside--close aside-help"
+        ></a>
+      </div>
+
+      <div class="container container__aside prod__container">
+
+        <div class = 'prod-container'>
+          <div class="prod-card">
+
+            <div class="prod-infoLeft">
+              <svg class="prod-wishlist"
+                data-id="4"
+                data-name="Sunflower honey"
+                data-price="250" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="grey" stroke-width="2">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+              <img src="./images/sunflower_honey.jpg" alt="images a jar of sunflower honey" class="prod-image">
+              <h2 class="prod-title">Sunflower honey</h2>
+            </div>
+
+            <div class = 'prod-info'>
+              <div class="prod-category">
+                Category: <a href="#helpHoney">Honey products</a>
+              </div>
+              <p class="prod-description">Sunflower honey is a bright and rich variety with a golden-yellow hue,
+                harvested from sunflower fields, with a warm and slightly spicy flavor.
+                Rich in vitamins and minerals, it's an excellent source of energy and immune system support.
+              </p>
+
+              <div class="prod-features">
+                <h4> Characteristics:</h4>
+                  <ul>
+                    <li>Vaga: 1000 g </li>
+                    <li>Pokhodzhennya: Ukraine </li>
+                    <li>Warehouse: 100% natural honey</li>
+                  </ul>
+              </div>
+
+              <div class="prod-price">250</div>
+
+              <a href="#buy"
+                class="add-to-cart1"
+                data-id="14"
+                data-name="Sunflower honey"
+                data-price="250"
+                data-photo="./images/sunflower_honey.jpg">add to cart
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer__category">
+        <div class="container">
+          <div class="footer__container">
+
+            <div class="footer__logo">
+              <a
+                class="header__logo"
+                href="#"
+              >
+                <img
+                  class="header__logo-img footer__logo-img"
+                  src="icons/logo-small.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="footer__wish">
+              <div class="footer__menu">
+                <nav class="footer__menu-nav">
+                  <ul class="footer__menu-list">
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#about"
+                      >
+                        About11
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#tech"
+                      >
+                        For you
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#products"
+                      >
+                        Category
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#"
+                      >
+                        Delivery
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#"
+                      >
+                        Return of goods
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="footer__contact">
+                <h3 class="footer__title">contact us</h3>
+
+                <address class="contact__address">
+                  213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name
+
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="tel:+86-0571-86105373">
+                        +86-0571-86105373
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="mailto:global@katvr.com">
+                        global@katvr.com
+                      </a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </div>
+            <div class="footer__social">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com"
+                target="_blank"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./icons/social/footer-facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.twitter.com"
+                target="_blank"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./icons/social/footer-twitter.svg"
+                  alt="Twitter"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.youtube.com"
+                target="_blank"
+              >
+                <img
+                  src="./icons/social/footer-youtube.svg"
+                  alt="YouTube"
+                  class="footer__social-icon"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.reddit.com"
+                target="_blank"
+              >
+                <img
+                  src="./icons/social/footer-redit.svg"
+                  alt="Reddit"
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!--<aside
       class="lang menu"
       id="lang"
-    >
+     >
       <div class="lang__wrapper">
         <div class="container">
           <a
@@ -1012,532 +2238,463 @@
           </nav>
         </div>
       </div>
-    </aside>
+    </aside>-->
 
-    <aside
-      class="buy"
+    <div class="buy"
       id="buy"
-    >
+     >
       <div class="buy__wrapper">
-        <div class="container">
-          <div class="buy__top">
-            <a
-              href="#"
-              class="header__logo buy__logo"
-            >
-              <img
-                class="header__logo-img"
-                src="icons/logo-small.png"
-                alt="logo"
-              />
-            </a>
-            <a
-              href="#"
-              class="icon buy__close"
-            ></a>
-          </div>
-        </div>
-
-        <div class="buy__menu">
-          <div
-            class="step active"
-            data-step="1"
+        <div class="menu__page">
+          <a
+            href="#"
+            class="header__logo"
           >
-            <a
-              class="buy__menu-item"
-              href="#buy"
-            >
-              Place Order
-            </a>
-          </div>
-
-          <div
-            class="step"
-            data-step="2"
-          >
-            <a
-              class="buy__menu-item"
-              href="#step-2"
-            >
-              Pay
-            </a>
-          </div>
-
-          <div
-            class="step"
-            data-step="3"
-          >
-            <a
-              class="buy__menu-item"
-              href="#step-3"
-            >
-              Complete
-            </a>
-          </div>
-        </div>
-
-        <div class="buy__wrapper-box">
-          <div class="buy__img">
             <img
-              class="buy__img-picture"
-              src="images/image1.png"
-              alt="images product"
+            class="header__logo-img"
+            src="icons/logo-small.png"
+            alt="logo"
             />
+          </a>
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#about"
+                >
+                  About
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu menu__item--tech">
+                <a
+                  class="menu__link"
+                  href="#tech"
+                >
+                  For you
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#products"
+                >
+                  Category
+                </a>
+              </li>
+              <li class="menu__item menu__item-menu">
+                <a
+                  class="menu__link"
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </li>
+              <!--<li class="menu__item">
+                <a
+                  class="menu__link menu__item-lang"
+                  href="#lang"
+                >
+                  Language
+                </a>
+              </li>-->
+            </ul>
+          </nav>
+          <a
+          href="#helpHoney"
+          class="icon aside--close aside-help"
+          ></a>
+        </div>
+
+        <div class="cart-container">
+          <div id="cart-items" class="cart-items"></div>
+
+          <div class="cart-total">
+            <p>Итого: <span id="total-price">0 UAN</span></p>
+            <button id="clear-cart"
+              class="clear-cart"
+              title="Очистить корзину">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              class="class1 class2">
+                  <g id="_01_align_center" data-name="01 align center">
+                      <path fill="white" d="M22,4H17V2a2,2,0,0,0-2-2H9A2,2,0,0,0,7,2V4H2V6H4V21a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V6h2ZM9,2h6V4H9Zm9,19a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V6H18Z"/>
+                      <rect fill="white" x="9" y="10" width="2" height="8"/>
+                      <rect fill="white" x="13" y="10" width="2" height="8"/>
+                  </g>
+              </svg>
+            </button>
+            <!--<button id="checkout" class="btn-checkout">Оформить заказ</button>-->
           </div>
+
+        </div>
+
+        <footer class="footer footer__page">
           <div class="container">
-            <div class="price-container">
-              <div class="quantity">
-                <label class="quantity__label">Quantity</label>
-                <select
-                  class="quantity__select-option"
-                  id="quantity-select-step1"
-                >
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-              <div class="price">
-                <label>Price</label>
-                <span
-                  class="quantity__select-price"
-                  id="price-value-step1"
-                >
-                  1200$
-                </span>
-              </div>
-            </div>
+            <div class="footer__container">
 
-            <div
-              class="form-container"
-              id="step-1"
-            >
-              <form
-                class="buy__order-form"
-                id="order-form"
-              >
-                <div class="form-group">
-                  <input
-                    class="buy__input"
-                    type="text"
-                    id="first-name"
-                    placeholder="First Name*"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    class="buy__input"
-                    type="text"
-                    id="last-name"
-                    placeholder="Last Name*"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    class="buy__input"
-                    type="email"
-                    id="email"
-                    placeholder="Email*"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    class="buy__input"
-                    type="tel"
-                    id="phone"
-                    placeholder="Phone Number*"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="country">Country*</label>
-                  <select
-                    class="buy__select"
-                    id="country"
-                    required
-                  >
-                    <option
-                      class="buy__city"
-                      value=" "
-                      disabled
-                      selected
-                    ></option>
-                    <option value="ukraine">Ukraine</option>
-                    <option value="russia">Russia</option>
-                    <option value="france">France</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="city">City*</label>
-                  <select
-                    class="buy__select"
-                    id="city"
-                    required
-                  >
-                    <option
-                      value=" "
-                      disabled
-                      selected
-                    ></option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <input
-                    class="buy__input"
-                    type="text"
-                    id="address"
-                    placeholder="Shipping Address*"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    class="buy__input"
-                    type="text"
-                    id="address2"
-                    placeholder="Shipping Address 2"
-                  />
-                </div>
-                <button
-                  class="buy__button"
-                  type="submit"
+              <div class="footer__logo">
+                <a
+                  class="header__logo"
+                  href="#"
                 >
-                  Purchase
-                </button>
-              </form>
+                  <img
+                    class="header__logo-img footer__logo-img"
+                    src="icons/logo-small.png"
+                    alt="logo"
+                  />
+                </a>
+              </div>
+              <div class="footer__wish">
+                <div class="footer__menu">
+                  <nav class="footer__menu-nav">
+                    <ul class="footer__menu-list">
+                      <li class="footer__menu-item menu__item-menu">
+                        <a
+                          class="footer__menu-link"
+                          href="#about"
+                        >
+                          About
+                        </a>
+                      </li>
+                      <li class="footer__menu-item menu__item-menu">
+                        <a
+                          class="footer__menu-link"
+                          href="#tech"
+                        >
+                          For you
+                        </a>
+                      </li>
+                      <li class="footer__menu-item menu__item-menu">
+                        <a
+                          class="footer__menu-link"
+                          href="#products"
+                        >
+                          Category
+                        </a>
+                      </li>
+                      <li class="footer__menu-item menu__item-menu">
+                        <a
+                          class="footer__menu-link"
+                          href="#"
+                        >
+                          Delivery
+                        </a>
+                      </li>
+                      <li class="footer__menu-item menu__item-menu">
+                        <a
+                          class="footer__menu-link"
+                          href="#"
+                        >
+                          Return of goods
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div class="footer__contact">
+                  <h3 class="footer__title">contact us</h3>
+
+                  <address class="contact__address">
+                    213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name
+
+                    <ul class="contact__list">
+                      <li class="contact__item">
+                        <a class="contact__link" href="tel:+86-0571-86105373">
+                          +86-0571-86105373
+                        </a>
+                      </li>
+                    </ul>
+
+                    <ul class="contact__list">
+                      <li class="contact__item">
+                        <a class="contact__link" href="mailto:global@katvr.com">
+                          global@katvr.com
+                        </a>
+                      </li>
+                    </ul>
+                  </address>
+                </div>
+              </div>
+              <div class="footer__social">
+                <a
+                  class="footer__social-link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                >
+                  <img
+                    class="footer__social-icon"
+                    src="./icons/social/footer-facebook.svg"
+                    alt="Facebook"
+                  />
+                </a>
+
+                <a
+                  class="footer__social-link"
+                  href="https://www.twitter.com"
+                  target="_blank"
+                >
+                  <img
+                    class="footer__social-icon"
+                    src="./icons/social/footer-twitter.svg"
+                    alt="Twitter"
+                  />
+                </a>
+
+                <a
+                  class="footer__social-link"
+                  href="https://www.youtube.com"
+                  target="_blank"
+                >
+                  <img
+                    src="./icons/social/footer-youtube.svg"
+                    alt="YouTube"
+                    class="footer__social-icon"
+                  />
+                </a>
+
+                <a
+                  class="footer__social-link"
+                  href="https://www.reddit.com"
+                  target="_blank"
+                >
+                  <img
+                    src="./icons/social/footer-redit.svg"
+                    alt="Reddit"
+                    class="footer__social-icon"
+                  />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </footer>
       </div>
-    </aside>
+    </div>
 
-    <aside
-      class="buy buy-pay"
-      id="step-2"
-    >
-      <div class="buy__wrapper">
-        <div class="container">
-          <div class="buy__top">
-            <a
-              href="#"
-              class="header__logo buy__logo"
-            >
-              <img
-                class="header__logo-img"
-                src="icons/logo-small.png"
-                alt="logo"
-              />
-            </a>
-            <a
-              href="#buy"
-              class="icon buy__close"
-            ></a>
-          </div>
-        </div>
-
-        <div class="buy__menu">
-          <div
-            class="step"
-            data-step="1"
-          >
-            <a
-              class="buy__menu-item"
-              href="#buy"
-            >
-              Place Order
-            </a>
-          </div>
-
-          <div
-            class="step"
-            data-step="2"
-          >
-            <a
-              class="buy__menu-item"
-              href="#step-2"
-            >
-              Pay
-            </a>
-          </div>
-
-          <div
-            class="step"
-            data-step="3"
-          >
-            <a
-              class="buy__menu-item"
-              href="#step-3"
-            >
-              Complete
-            </a>
-          </div>
-        </div>
-
-        <div class="buy__img">
+    <div class="wish"
+      id="wish"
+     >
+      <div class="menu__page">
+        <a
+          href="#"
+          class="header__logo"
+        >
           <img
-            class="buy__img-picture buy__img-pay"
-            src="images/image1.png"
-            alt="images product"
+          class="header__logo-img"
+          src="icons/logo-small.png"
+          alt="logo"
           />
-        </div>
+        </a>
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#about"
+              >
+                About
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu menu__item--tech">
+              <a
+                class="menu__link"
+                href="#tech"
+              >
+                For you
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#products"
+              >
+                Category
+              </a>
+            </li>
+            <li class="menu__item menu__item-menu">
+              <a
+                class="menu__link"
+                href="#contact"
+              >
+                Contact
+              </a>
+            </li>
+            <!--<li class="menu__item">
+              <a
+                class="menu__link menu__item-lang"
+                href="#lang"
+              >
+                Language
+              </a>
+            </li>-->
+          </ul>
+        </nav>
+        <a
+        href="#"
+        class="icon aside--close aside-help"
+        ></a>
+      </div>
+      <table class="wishlist-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price (UAH)</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody id="wishlist-body">
+        <!-- Товари додаватимуться сюди через JavaScript -->
+        </tbody>
+      </table>
 
+
+      <footer class="footer footer__page">
         <div class="container">
-          <div class="price-container price-container-pay">
-            <div class="quantity quantity-pay">
-              <label class="quantity__label">Quantity</label>
-              <select
-                class="quantity__select-option"
-                id="quantity-select-step2"
-              >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-            <div class="price">
-              <label>Price</label>
-              <span
-                class="quantity__select-price"
-                id="price-value-step2"
-              >
-                1200$
-              </span>
-            </div>
-          </div>
+          <div class="footer__container">
 
-          <form
-            class="buy-pay__payment-form"
-            id="payment-form"
-          >
-            <div class="buy-pay__form payment-form__group">
-              <label
-                class="buy-pay__form buy-pay__form-label"
-                for="card-number-1"
-              >
-                Card Number*
-              </label>
-              <div class="card-number-group">
-                <input
-                  class="payment-form__input payment-form__input--card-number buy__input"
-                  type="text"
-                  id="card-number-1"
-                  placeholder="1234"
-                  maxlength="4"
-                  required
-                />
-                <input
-                  class="payment-form__input payment-form__input--card-number buy__input"
-                  type="text"
-                  id="card-number-2"
-                  placeholder="0000"
-                  maxlength="4"
-                  required
-                />
-                <input
-                  class="payment-form__input payment-form__input--card-number buy__input"
-                  type="text"
-                  id="card-number-3"
-                  placeholder="0000"
-                  maxlength="4"
-                  required
-                />
-                <input
-                  class="payment-form__input payment-form__input--card-number buy__input"
-                  type="text"
-                  id="card-number-4"
-                  placeholder="0000"
-                  maxlength="4"
-                  required
-                />
+            <div class="footer__logo">
+              <a class="header__logo"
+                href="#">
                 <img
-                  class="pay__visa"
-                  src="./icons/visa.svg"
-                  alt="picture of visa"
-                />
+                  class="header__logo-img footer__logo-img"
+                  src="icons/logo-small.png"
+                  alt="logo"/>
+              </a>
+            </div>
+            <div class="footer__wish">
+              <div class="footer__menu">
+                <nav class="footer__menu-nav">
+                  <ul class="footer__menu-list">
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#about"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#tech"
+                      >
+                        For you
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#products"
+                      >
+                        Category
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#"
+                      >
+                        Delivery
+                      </a>
+                    </li>
+                    <li class="footer__menu-item menu__item-menu">
+                      <a
+                        class="footer__menu-link"
+                        href="#"
+                      >
+                        Return of goods
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
 
-              <span
-                class="error-message"
-                id="card-number-error"
-              ></span>
-            </div>
+              <div class="footer__contact">
+                <h3 class="footer__title">contact us</h3>
 
-            <div class="payment-form__group">
-              <label
-                class="buy-pay__form buy-pay__form-lab card-holder-label"
-                for="card-holder"
+                <address class="contact__address">
+                  213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name
+
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="tel:+86-0571-86105373">
+                        +86-0571-86105373
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="mailto:global@katvr.com">
+                        global@katvr.com
+                      </a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </div>
+            <div class="footer__social">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com"
+                target="_blank"
               >
-                Card Holder Name*
-              </label>
-              <input
-                class="payment-form__input buy__input card-holder-input"
-                type="text"
-                id="card-holder"
-                required
-              />
-              <span
-                class="error-message"
-                id="card-holder-error"
-              ></span>
-            </div>
-
-            <div class="payment-form__group row">
-              <div class="col">
-                <label
-                  class="buy-pay__form buy-pay__form-date expiry-date-label"
-                  for="expiry-date"
-                >
-                  Expiration Date*
-                </label>
-                <input
-                  class="payment-form__input buy__input expiry-date-input"
-                  type="text"
-                  id="expiry-date"
-                  placeholder="MM / YY"
-                  maxlength="7"
-                  required
+                <img
+                  class="footer__social-icon"
+                  src="./icons/social/footer-facebook.svg"
+                  alt="Facebook"
                 />
-                <span
-                  class="error-message"
-                  id="expiry-date-error"
-                ></span>
-              </div>
-              <div class="col">
-                <label
-                  class="buy-pay__form buy-pay__form-cvv cvv-label"
-                  for="cvv"
-                >
-                  CVV*
-                </label>
-                <input
-                  class="payment-form__input buy__input cvv-input"
-                  type="text"
-                  id="cvv"
-                  placeholder="000"
-                  maxlength="3"
-                  required
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.twitter.com"
+                target="_blank"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./icons/social/footer-twitter.svg"
+                  alt="Twitter"
                 />
-                <span
-                  class="error-message"
-                  id="cvv-error"
-                ></span>
-              </div>
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.youtube.com"
+                target="_blank"
+              >
+                <img
+                  src="./icons/social/footer-youtube.svg"
+                  alt="YouTube"
+                  class="footer__social-icon"
+                />
+              </a>
+
+              <a
+                class="footer__social-link"
+                href="https://www.reddit.com"
+                target="_blank"
+              >
+                <img
+                  src="./icons/social/footer-redit.svg"
+                  alt="Reddit"
+                  class="footer__social-icon"
+                />
+              </a>
             </div>
-
-            <button
-              class="buy__button buy__button-pay"
-              type="submit"
-            >
-              Purchase
-            </button>
-          </form>
-        </div>
-      </div>
-    </aside>
-
-    <aside
-      class="buy buy__complete"
-      id="step-3"
-    >
-      <div class="buy__wrapper">
-        <div class="container">
-          <div class="buy__top">
-            <a
-              class="header__logo buy__logo"
-              href="#"
-            >
-              <img
-                class="header__logo-img"
-                src="icons/logo-small.png"
-                alt="logo"
-              />
-            </a>
-
-            <a
-              class="icon buy__close"
-              href="#step-2"
-            ></a>
           </div>
         </div>
-
-        <div class="buy__menu">
-          <div
-            class="step"
-            data-step="1"
-          >
-            <a
-              class="buy__menu-item"
-              href="#buy"
-            >
-              Place Order
-            </a>
-          </div>
-
-          <div
-            class="step"
-            data-step="2"
-          >
-            <a
-              class="buy__menu-item"
-              href="#step-2"
-            >
-              Pay
-            </a>
-          </div>
-
-          <div
-            class="step"
-            data-step="3"
-          >
-            <a
-              class="buy__menu-item"
-              href="#step-3"
-            >
-              Complete
-            </a>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="buy__complete-content">
-            <h2 class="aside__title buy__complete-title">
-              Thank you for
-              <span class="buy__complete-title--accent">your</span>
-              order!
-            </h2>
-
-            <p class="buy__complete-text">
-              Your order has been placed and is being processed. You will recive
-              an email with the order details
-            </p>
-
-            <button
-              class="buy__button button__complete"
-              type="submit"
-            >
-              Back to homepage
-            </button>
-          </div>
-        </div>
-      </div>
-    </aside>
+      </footer>
+    </div>
 
     <main>
       <section
         class="more"
         id="more"
-      >
+       >
         <div class="container">
           <h2 class="section__title more__title">
             MORE THAN
-            <span class="section__title--color">GAMING!</span>
+            <span class="section__title--color-honey">Honey!</span>
           </h2>
 
           <p class="more__text">
@@ -1548,24 +2705,24 @@
             <div class="more__block">
               <h3 class="section__subtitle more__subtitle">EDUCATION</h3>
               <p class="section__text">
-                Create aducational simulations, trainings and much more with
-                unlimited virtual space and minimum physical space
+                Candle-making lessons: from honey and wax to unique designs.
+                Master the craft, create with nature!
               </p>
             </div>
 
             <div class="more__block more__block-estate">
-              <h3 class="section__subtitle more__subtitle">REAL ESTATE</h3>
+              <h3 class="section__subtitle more__subtitle">Health</h3>
               <p class="section__text">
-                Desighn architectural projects in a deeply realistic environment
-                allowing visitors to freely walk around, and feel their vibe
+                Sleeping on beehives: the vibrations and aroma of honey and
+                propolis strengthen health, relieve stress, and improve sleep.
               </p>
             </div>
 
             <div class="more__block more__block-fitness">
               <h3 class="section__subtitle more__subtitle">FITNESS</h3>
               <p class="section__text">
-                Combine business with pleasure, and discover countless ways to
-                stay fit while playing your favorite VR Games!
+                Мёд для фитнеса: природный энергетик, восстанавливает силы,
+                поддерживает иммунитет, ускоряет метаболизм после тренировок.
               </p>
             </div>
 
@@ -1574,481 +2731,28 @@
                 SOCIAL INTERACTIONS
               </h3>
               <p class="section__text">
-                Hang out with your friends in the virtual world when you can’t
-                meet space requirements
+                Meditation with like-minded people in nature is calming,
+                harmonizing, and inspiring.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        class="about"
+      <section class="about"
         id="about"
-      >
-        <div class="container">
-          <div class="about__top">
-            <div class="about__slider">
-              <div
-                class="about__slides"
-                id="aboutSlides"
-              >
-                <div class="about__slide">
-                  <div class="about__slide-wrapper">
-                    <h2 class="section__title about__slider-title">
-                      ABOUT
-                      <span class="section__title--color">PRODUCT</span>
-                    </h2>
-                    <img
-                      class="about__img"
-                      src="./images/about-image1.jpg"
-                      alt="KAT Loco device on user"
-                    />
+       >
+         <div class="container">
+          <h2 class="section__title more__title">
+            Who we are
+          </h2>
 
-                    <p class="about__top-text">
-                      KAT loco is a foot-based VR locomotion system that gives
-                      complete physical control over lower-body actions,
-                      allowing you to freely walk, run, and carry out just any
-                      other movement in virtual reality.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="about__slide">
-                  <div class="about__slide-wrapper">
-                    <h2 class="section__title about__slider-title">
-                      ABOUT
-                      <span class="section__title--color">PRODUCT</span>
-                    </h2>
-                    <img
-                      class="about__img"
-                      src="./images/image2.jpg"
-                      alt="VR Headset"
-                    />
-
-                    <p class="about__top-text">
-                      2KAT loco is a foot-based VR locomotion system that gives
-                      complete physical control over lower-body actions,
-                      allowing you to freely walk, run, and carry out just any
-                      other movement in virtual reality.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="about__slide">
-                  <div class="about__slide-wrapper">
-                    <h2 class="section__title about__slider-title">
-                      ABOUT
-                      <span class="section__title--color">PRODUCT</span>
-                    </h2>
-                    <img
-                      class="about__img"
-                      src="./images/image3.jpg"
-                      alt="VR Headset"
-                    />
-
-                    <p class="about__top-text">
-                      3KAT loco is a foot-based VR locomotion system that gives
-                      complete physical control over lower-body actions,
-                      allowing you to freely walk, run, and carry out just any
-                      other movement in virtual reality.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="about__slide">
-                  <div class="about__slide-wrapper">
-                    <h2 class="section__title about__slider-title">
-                      ABOUT
-                      <span class="section__title--color">PRODUCT</span>
-                    </h2>
-                    <img
-                      class="about__img"
-                      src="./images/image4.jpg"
-                      alt="VR Headset"
-                    />
-
-                    <p class="about__top-text">
-                      4KAT loco is a foot-based VR locomotion system that gives
-                      complete physical control over lower-body actions,
-                      allowing you to freely walk, run, and carry out just any
-                      other movement in virtual reality.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="about__slide">
-                  <div class="about__slide-wrapper">
-                    <h2 class="section__title about__slider-title">
-                      ABOUT
-                      <span class="section__title--color">PRODUCT</span>
-                    </h2>
-                    <img
-                      class="about__img"
-                      src="./images/img5.jpg"
-                      alt="VR Headset"
-                    />
-
-                    <p class="about__top-text">
-                      5KAT loco is a foot-based VR locomotion system that gives
-                      complete physical control over lower-body actions,
-                      allowing you to freely walk, run, and carry out just any
-                      other movement in virtual reality.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="about__slider-controls">
-                <div class="about__slider-nav">
-                  <button
-                    class="header__bottom-slider-but about__bottom-slider-but"
-                    id="aboutPrevBtn"
-                  >
-                    Previous
-                  </button>
-
-                  <button
-                    class="header__bottom-slider-but about__bottom-slider-but"
-                    id="aboutNothingvBtn"
-                  ></button>
-
-                  <button
-                    class="header__bottom-slider-but about__bottom-slider-but"
-                    id="aboutNextBtn"
-                  >
-                    Next
-                  </button>
-                </div>
-
-                <div
-                  class="about__slider-counter"
-                  id="aboutCounter"
-                >
-                  1/5
-                </div>
-              </div>
-
-              <div class="about__slider-dots">
-                <div class="about__slider-dot active"></div>
-                <div class="about__slider-dot"></div>
-                <div class="about__slider-dot"></div>
-                <div class="about__slider-dot"></div>
-                <div class="about__slider-dot"></div>
-              </div>
-
-              <div class="about__video">
-                <iframe
-                  class="about__video-iframe"
-                  id="vrVideo2"
-                  src="https://www.youtube.com/embed/SvTbB19bvIw?enablejsapi=1"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-                <a
-                  href="#"
-                  class="icon video--close-video"
-                  data-video="vrVideo2"
-                ></a>
-
-                <button
-                  class="about__play-button"
-                  data-video="vrVideo2"
-                >
-                  <svg
-                    width="221"
-                    height="69"
-                    viewBox="0 0 221 69"
-                    fill="black"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M107.278 40V28.3636H111.426C112.331 28.3636 113.081 28.5284 113.676 28.858C114.271 29.1875 114.716 29.6383 115.011 30.2102C115.307 30.7784 115.455 31.4186 115.455 32.1307C115.455 32.8466 115.305 33.4905 115.006 34.0625C114.71 34.6307 114.263 35.0814 113.665 35.4148C113.07 35.7443 112.322 35.9091 111.42 35.9091H108.568V34.4205H111.261C111.833 34.4205 112.297 34.322 112.653 34.125C113.009 33.9242 113.271 33.6515 113.438 33.3068C113.604 32.9621 113.688 32.5701 113.688 32.1307C113.688 31.6913 113.604 31.3011 113.438 30.9602C113.271 30.6193 113.008 30.3523 112.648 30.1591C112.292 29.9659 111.822 29.8693 111.239 29.8693H109.034V40H107.278ZM119.075 28.3636V40H117.376V28.3636H119.075ZM123.901 40.1932C123.348 40.1932 122.848 40.0909 122.401 39.8864C121.954 39.678 121.599 39.3769 121.338 38.983C121.08 38.589 120.952 38.1061 120.952 37.5341C120.952 37.0417 121.046 36.6364 121.236 36.3182C121.425 36 121.681 35.7481 122.003 35.5625C122.325 35.3769 122.685 35.2367 123.082 35.142C123.48 35.0473 123.885 34.9754 124.298 34.9261C124.821 34.8655 125.245 34.8163 125.571 34.7784C125.897 34.7367 126.134 34.6705 126.281 34.5795C126.429 34.4886 126.503 34.3409 126.503 34.1364V34.0966C126.503 33.6004 126.363 33.2159 126.082 32.9432C125.806 32.6705 125.393 32.5341 124.844 32.5341C124.272 32.5341 123.821 32.661 123.491 32.9148C123.166 33.1648 122.94 33.4432 122.815 33.75L121.219 33.3864C121.408 32.8561 121.685 32.428 122.048 32.1023C122.416 31.7727 122.838 31.5341 123.315 31.3864C123.793 31.2348 124.295 31.1591 124.821 31.1591C125.17 31.1591 125.539 31.2008 125.929 31.2841C126.323 31.3636 126.69 31.5114 127.031 31.7273C127.376 31.9432 127.658 32.2519 127.878 32.6534C128.098 33.0511 128.207 33.5682 128.207 34.2045V40H126.548V38.8068H126.48C126.37 39.0265 126.205 39.2424 125.986 39.4545C125.766 39.6667 125.484 39.8428 125.139 39.983C124.795 40.1231 124.382 40.1932 123.901 40.1932ZM124.27 38.8295C124.74 38.8295 125.141 38.7367 125.474 38.5511C125.812 38.3655 126.067 38.1231 126.241 37.8239C126.42 37.5208 126.509 37.197 126.509 36.8523V35.7273C126.448 35.7879 126.33 35.8447 126.156 35.8977C125.986 35.947 125.791 35.9905 125.571 36.0284C125.351 36.0625 125.137 36.0947 124.929 36.125C124.721 36.1515 124.546 36.1742 124.406 36.1932C124.077 36.2348 123.776 36.3049 123.503 36.4034C123.234 36.5019 123.018 36.6439 122.855 36.8295C122.696 37.0114 122.616 37.2538 122.616 37.5568C122.616 37.9773 122.772 38.2955 123.082 38.5114C123.393 38.7235 123.789 38.8295 124.27 38.8295ZM131.232 43.2727C130.978 43.2727 130.747 43.2519 130.538 43.2102C130.33 43.1723 130.175 43.1307 130.072 43.0852L130.482 41.6932C130.792 41.7765 131.069 41.8125 131.311 41.8011C131.554 41.7898 131.768 41.6989 131.953 41.5284C132.143 41.358 132.309 41.0795 132.453 40.6932L132.663 40.1136L129.47 31.2727H131.288L133.499 38.0455H133.589L135.8 31.2727H137.624L134.027 41.1648C133.86 41.6193 133.648 42.0038 133.391 42.3182C133.133 42.6364 132.826 42.875 132.47 43.0341C132.114 43.1932 131.701 43.2727 131.232 43.2727ZM144.608 28.3636L147.847 37.8409H147.977L151.216 28.3636H153.114L148.926 40H146.898L142.71 28.3636H144.608ZM154.658 40V31.2727H156.357V40H154.658ZM155.516 29.9261C155.22 29.9261 154.966 29.8277 154.754 29.6307C154.546 29.4299 154.442 29.1913 154.442 28.9148C154.442 28.6345 154.546 28.3958 154.754 28.1989C154.966 27.9981 155.22 27.8977 155.516 27.8977C155.811 27.8977 156.063 27.9981 156.271 28.1989C156.483 28.3958 156.589 28.6345 156.589 28.9148C156.589 29.1913 156.483 29.4299 156.271 29.6307C156.063 29.8277 155.811 29.9261 155.516 29.9261ZM161.909 40.1705C161.205 40.1705 160.576 39.9905 160.023 39.6307C159.473 39.267 159.042 38.75 158.727 38.0795C158.417 37.4053 158.261 36.5966 158.261 35.6534C158.261 34.7102 158.419 33.9034 158.733 33.233C159.051 32.5625 159.487 32.0492 160.04 31.6932C160.593 31.3371 161.22 31.1591 161.92 31.1591C162.462 31.1591 162.898 31.25 163.227 31.4318C163.561 31.6098 163.818 31.8182 164 32.0568C164.186 32.2955 164.33 32.5057 164.432 32.6875H164.534V28.3636H166.233V40H164.574V38.642H164.432C164.33 38.8277 164.182 39.0398 163.989 39.2784C163.799 39.517 163.538 39.7254 163.205 39.9034C162.871 40.0814 162.439 40.1705 161.909 40.1705ZM162.284 38.7216C162.773 38.7216 163.186 38.5928 163.523 38.3352C163.864 38.0739 164.121 37.7121 164.295 37.25C164.473 36.7879 164.562 36.25 164.562 35.6364C164.562 35.0303 164.475 34.5 164.301 34.0455C164.127 33.5909 163.871 33.2367 163.534 32.983C163.197 32.7292 162.78 32.6023 162.284 32.6023C161.773 32.6023 161.347 32.7348 161.006 33C160.665 33.2652 160.407 33.6269 160.233 34.0852C160.063 34.5436 159.977 35.0606 159.977 35.6364C159.977 36.2197 160.064 36.7443 160.239 37.2102C160.413 37.6761 160.67 38.0455 161.011 38.3182C161.356 38.5871 161.78 38.7216 162.284 38.7216ZM172.419 40.1761C171.559 40.1761 170.819 39.9924 170.197 39.625C169.58 39.2538 169.103 38.733 168.766 38.0625C168.432 37.3883 168.266 36.5985 168.266 35.6932C168.266 34.7992 168.432 34.0114 168.766 33.3295C169.103 32.6477 169.572 32.1155 170.175 31.733C170.781 31.3504 171.489 31.1591 172.3 31.1591C172.792 31.1591 173.269 31.2405 173.732 31.4034C174.194 31.5663 174.608 31.822 174.976 32.1705C175.343 32.5189 175.633 32.9716 175.845 33.5284C176.057 34.0814 176.163 34.7538 176.163 35.5455V36.1477H169.226V34.875H174.499C174.499 34.428 174.408 34.0322 174.226 33.6875C174.044 33.339 173.788 33.0644 173.459 32.8636C173.133 32.6629 172.75 32.5625 172.311 32.5625C171.834 32.5625 171.417 32.6799 171.061 32.9148C170.709 33.1458 170.436 33.4489 170.243 33.8239C170.054 34.1951 169.959 34.5985 169.959 35.0341V36.0284C169.959 36.6117 170.061 37.108 170.266 37.517C170.474 37.9261 170.764 38.2386 171.135 38.4545C171.506 38.6667 171.94 38.7727 172.436 38.7727C172.758 38.7727 173.052 38.7273 173.317 38.6364C173.582 38.5417 173.811 38.4015 174.004 38.2159C174.197 38.0303 174.345 37.8011 174.447 37.5284L176.055 37.8182C175.927 38.2917 175.696 38.7064 175.362 39.0625C175.033 39.4148 174.618 39.6894 174.118 39.8864C173.622 40.0795 173.055 40.1761 172.419 40.1761ZM181.724 40.1761C180.906 40.1761 180.192 39.9886 179.582 39.6136C178.973 39.2386 178.499 38.714 178.162 38.0398C177.825 37.3655 177.656 36.5777 177.656 35.6761C177.656 34.7708 177.825 33.9792 178.162 33.3011C178.499 32.6231 178.973 32.0966 179.582 31.7216C180.192 31.3466 180.906 31.1591 181.724 31.1591C182.543 31.1591 183.257 31.3466 183.866 31.7216C184.476 32.0966 184.95 32.6231 185.287 33.3011C185.624 33.9792 185.793 34.7708 185.793 35.6761C185.793 36.5777 185.624 37.3655 185.287 38.0398C184.95 38.714 184.476 39.2386 183.866 39.6136C183.257 39.9886 182.543 40.1761 181.724 40.1761ZM181.73 38.75C182.26 38.75 182.7 38.6098 183.048 38.3295C183.397 38.0492 183.654 37.6761 183.821 37.2102C183.991 36.7443 184.077 36.2311 184.077 35.6705C184.077 35.1136 183.991 34.6023 183.821 34.1364C183.654 33.6667 183.397 33.2898 183.048 33.0057C182.7 32.7216 182.26 32.5795 181.73 32.5795C181.196 32.5795 180.753 32.7216 180.401 33.0057C180.052 33.2898 179.793 33.6667 179.622 34.1364C179.455 34.6023 179.372 35.1136 179.372 35.6705C179.372 36.2311 179.455 36.7443 179.622 37.2102C179.793 37.6761 180.052 38.0492 180.401 38.3295C180.753 38.6098 181.196 38.75 181.73 38.75Z"
-                      fill="white"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M86 12H56V14H86V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M86 56H56V58H86V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M51 7C46.1191 3.58873 40.9135 2.35207 35 2.00004C29.0865 1.648 23.5605 3.00323 18.3211 5.81203C13.0817 8.62084 8.69816 12.8327 5.64507 17.9917C2.59199 23.1507 0.985693 29.0602 1.0001 35.0803C1.0145 41.1005 2.64905 47.002 5.72678 52.1458C8.80452 57.2896 13.2082 61.4798 18.4609 64.2627C23.7137 67.0456 29.6155 68.3151 35.5272 67.9339C41.439 67.5526 47.1355 65.4354 52 62"
-                      stroke="#05C2DF"
-                      stroke-width="2"
-                      stroke-miterlimit="1.51696"
-                    />
-                    <path
-                      d="M34.0306 61.1555C48.6177 61.1555 60.4429 49.3649 60.4429 34.8204C60.4429 20.276 48.6177 8.48535 34.0306 8.48535C19.4434 8.48535 7.61816 20.276 7.61816 34.8204C7.61816 49.3649 19.4434 61.1555 34.0306 61.1555Z"
-                      stroke="#05C2DF"
-                      stroke-miterlimit="10"
-                    />
-                    <path
-                      class="play-button-path"
-                      d="M45 35L27.75 45.3923L27.75 24.6077L45 35Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M91 12H89V14H91V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M88 12H86V14H88V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M94 12H92V14H94V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M97 12H95V14H97V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M100 12H98V14H100V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M104 12H102V14H104V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M108 12H106V14H108V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M112 12H110V14H112V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M117 12H115V14H117V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M122 12H120V14H122V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M127 12H125V14H127V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M132 12H130V14H132V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M137 12H135V14H137V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M142 12H140V14H142V12Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M153.6 12.2305H152V13.8305H153.6V12.2305Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M159.6 12.2305H158V13.8305H159.6V12.2305Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M165.6 12.2305H164V13.8305H165.6V12.2305Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M171.3 12.4297H170V13.7297H171.3V12.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M178.3 12.4297H177V13.7297H178.3V12.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M185.3 12.4297H184V13.7297H185.3V12.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M192.3 12.4297H191V13.7297H192.3V12.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M200.3 12.4297H199V13.7297H200.3V12.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M209.3 12.4297H208V13.7297H209.3V12.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M147.6 12.2305H146V13.8305H147.6V12.2305Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M221 12.5H220V13.5H221V12.5Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M91 56H89V58H91V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M88 56H86V58H88V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M94 56H92V58H94V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M97 56H95V58H97V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M100 56H98V58H100V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M104 56H102V58H104V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M108 56H106V58H108V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M112 56H110V58H112V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M117 56H115V58H117V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M122 56H120V58H122V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M127 56H125V58H127V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M132 56H130V58H132V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M137 56H135V58H137V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M142 56H140V58H142V56Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M153.6 56.2305H152V57.8305H153.6V56.2305Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M159.6 56.2305H158V57.8305H159.6V56.2305Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M165.6 56.2305H164V57.8305H165.6V56.2305Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M171.3 56.4297H170V57.7297H171.3V56.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M178.3 56.4297H177V57.7297H178.3V56.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M185.3 56.4297H184V57.7297H185.3V56.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M192.3 56.4297H191V57.7297H192.3V56.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M200.3 56.4297H199V57.7297H200.3V56.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M209.3 56.4297H208V57.7297H209.3V56.4297Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M147.6 56.2305H146V57.8305H147.6V56.2305Z"
-                      fill="#05C2DF"
-                    />
-                    <path
-                      opacity="0.45"
-                      d="M221 56.5H220V57.5H221V56.5Z"
-                      fill="#05C2DF"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-
+          <p class="more__text">
+            We value nature and tranquility, creating natural products that bring health,
+            peace, and tranquility. We want our products to not only give you health, but
+            also to delight you with good quality, delicious taste, and a feeling of happiness
+            and comfort. We stand behind the quality of our products with our reputation.
+          </p>
           <div class="about__bottom">
             <div class="about__bottom-left">
               <span class="about__bottom-pretitle">Hello,</span>
@@ -2071,20 +2775,19 @@
         </div>
       </section>
 
-      <section
-        class="tech"
+      <section class="tech"
         id="tech"
-      >
+       >
         <div class="container">
           <h2 class="section__title tech__title">
-            TECH
-            <span class="section__title--color">SPECS</span>
+            for
+            <span class="section__title--color-honey">you</span>
           </h2>
 
           <div class="tech__wrapper">
             <div class="tech__circle">
               <img
-                src="./images/tech.png"
+                src="./images/tech.jpg"
                 alt="Tech device"
               />
               <div class="tech__small-circle">+</div>
@@ -2111,12 +2814,12 @@
               </svg>
 
               <div class="tech-specs__content">
-                <h3 class="tech-specs__subtitle">SENSOR</h3>
+                <h3 class="tech-specs__subtitle">honey</h3>
                 <ul class="tech-specs__list">
-                  <li>Weight: 35g/1.23oz each</li>
-                  <li>Dimension: 50mm/1.97in</li>
-                  <li>24mm/0.94in</li>
-                  <li>Light: LED lights</li>
+                  <li>linden</li>
+                  <li>May</li>
+                  <li>acacia</li>
+                  <li>sunflower</li>
                 </ul>
               </div>
             </div>
@@ -2154,17 +2857,13 @@
               </svg>
 
               <div class="tech-specs__content">
-                <h3 class="tech-specs__subtitle">BATTERRIES</h3>
+                <h3 class="tech-specs__subtitle">Wax products</h3>
                 <ul class="tech-specs__list">
-                  <li>Type: Lithium-Ion polymer batteries</li>
-                  <li>Capacity: 370mAh</li>
-                  <li>
-                    Battery life: 10% of continuous use 150 hours
-                    <br />
-                    on standby
-                  </li>
-                  <li>Charging: Fast charging ~ 1 hour</li>
-                  <li>Charging voltage and current: 5V = 0.5A</li>
+                  <li>candles</li>
+                  <li>scented candles</li>
+                  <li>wax pencils</li>
+                  <li>Scented wax sachets</li>
+                  <li>waxcrayons</li>
                 </ul>
               </div>
             </div>
@@ -2205,11 +2904,11 @@
               </svg>
 
               <div class="tech-specs__content">
-                <h3 class="tech-specs__subtitle">CONNECTION</h3>
+                <h3 class="tech-specs__subtitle">For health</h3>
                 <ul class="tech-specs__list">
-                  <li>Wireless: Bluetooth 4.2</li>
-                  <li>Signal range: 5m</li>
-                  <li>Receiver: USB 2.0 and above</li>
+                  <li>Walks in the forest</li>
+                  <li>Bee therapy houses</li>
+                  <li>Quiet</li>
                 </ul>
               </div>
             </div>
@@ -2217,57 +2916,51 @@
         </div>
       </section>
 
-      <section
-        class="benefits"
-        id="benefits"
-      >
-        <div class="container">
-          <h2 class="section__title benefits__title">
-            Why
-            <span class="section__title--color">Kat loco?</span>
-          </h2>
-
-          <div class="benefits__wrapper">
-            <div class="benefits__block benefits__block-compatible">
-              <h3 class="benefits__subtitle section__subtitle">
-                UNIVERSALLY COMPATIBLE
-              </h3>
-              <p class="benefits__text section__text">
-                KAT Loco offers universal compatibility across all major VR
-                headsets and platforms allowing you to play any VR game with
-                support for Free Locomotion
-              </p>
-            </div>
-
-            <div class="benefits__block benefits__block-control">
-              <h3 class="benefits__subtitle section__subtitle">
-                VR/PC CONTROL PANEL
-              </h3>
-              <p class="benefits__text section__text">
-                Our Multifunctional Software allows for quick access to KAT
-                Loco’s control panel both from a computer desktop, and directly
-                from your VR headset.
-              </p>
-            </div>
-
-            <div class="benefits__block benefits__block-sensors">
-              <h3 class="benefits__subtitle section__subtitle">
-                WIRELESS SENSORS
-              </h3>
-              <p class="benefits__text section__text">
-                What makes it even more advanced, KAT Loco is entirely wireless,
-                and comes with a complete system of algorithms, super durable
-                batteries and more!
-              </p>
-            </div>
+      <section class="products-section" id="products">
+        <div class="products-header">
+            <h2 class="products-title">Our category</h2>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <img
+              class="product-image"
+                src="./images/sort-of-honey.jpg"
+                alt="sorts of honey"
+            />
+            <h3 class="product-title">honey products</h3>
+            <p class="product-description">It has the scent of lavender, medium sweetness lavender scented, and has a medium amber color.</p>
+            <a
+                href="#helpHoney"
+                class="buy-btn">
+                Learn more
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="./images/wax_products.jpg" alt="images wax products" class="product-image">
+            <h3 class="product-title">wax products</h3>
+            <p class="product-description">Basswood is a tree native and abundant in Wisconsin, which is also known as the Linden tree.</p>
+            <a
+              href="#helpWax"
+              class="buy-btn"              >
+              Learn more
+            </a>
+          </div>
+          <div class="product-card">
+             <img src="./images/api_home.jpg" alt="images api_home" class="product-image">
+             <h3 class="product-title">For rest</h3>
+             <p class="product-description">A delightful blend from various wildflowers, offering a complex floral flavor with light amber hues.</p>
+             <a
+              href="#helpRest"
+              class="buy-btn"              >
+              Learn more
+            </a>
           </div>
         </div>
       </section>
 
-      <section
-        class="contact"
+      <section class="contact"
         id="contact"
-      >
+       >
         <div class="container">
           <p class="contact__uptitle">Have any questions?</p>
           <h2 class="section__title contact__title">
@@ -2291,12 +2984,13 @@
                 >
                   Name*
                 </label>
-                <span class="error-message">Please, fill your name*</span>
+                <span class="error-message" id="nameError">only letters.example 'Ivan'</span>
               </div>
 
               <div class="contact-group">
                 <input
                   type="email"
+                  id="email"
                   name="email"
                   placeholder="email"
                   required
@@ -2307,12 +3001,15 @@
                 >
                   Email*
                 </label>
-                <span class="error-message">Incorrect email format*</span>
+                <span class="error-message"id="emailError">
+                 'example@domain.com'
+                </span>
               </div>
 
               <div class="contact-group">
                 <input
                   type="tel"
+                  id="phone"
                   name="phone"
                   placeholder="phone"
                   maxlength="13"
@@ -2324,7 +3021,7 @@
                 >
                   Phone*
                 </label>
-                <span class="error-message">Please, fill your phone*</span>
+                <span class="error-message"id="phoneError">'example: +380123456789'</span>
               </div>
 
               <div class="contact-group">
@@ -2344,9 +3041,13 @@
               <button
                 type="submit"
                 class="contact-button"
-              >
+               >
                 Contact Us
               </button>
+              <div class="success-message"
+                id="successMessage">
+                  The form has been successfully submitted!
+              </div>
             </form>
           </div>
 
@@ -2379,10 +3080,9 @@
         </div>
       </section>
 
-      <button
-        class="back-to-top"
+      <button class="back-to-top"
         aria-label="back-to-top"
-      >
+       >
         <span class="sr-only"></span>
       </button>
     </main>
@@ -2419,27 +3119,59 @@
                     class="footer__menu-link"
                     href="#tech"
                   >
-                    Tech
+                    For you
                   </a>
                 </li>
                 <li class="footer__menu-item menu__item-menu">
                   <a
                     class="footer__menu-link"
-                    href="#benefits"
+                    href="#products"
                   >
-                    Benefits
+                    Category
                   </a>
                 </li>
                 <li class="footer__menu-item menu__item-menu">
                   <a
                     class="footer__menu-link"
-                    href="#contact"
+                    href="#"
                   >
-                    Contact
+                    Delivery
+                  </a>
+                </li>
+                <li class="footer__menu-item menu__item-menu">
+                  <a
+                    class="footer__menu-link"
+                    href="#"
+                  >
+                    Return of goods
                   </a>
                 </li>
               </ul>
             </nav>
+          </div>
+
+          <div class="footer__contact">
+            <h3 class="footer__title">contact us</h3>
+
+            <address class="contact__address">
+              213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name
+
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <a class="contact__link" href="tel:+86-0571-86105373">
+                    +86-0571-86105373
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <a class="contact__link" href="mailto:global@katvr.com">
+                    global@katvr.com
+                  </a>
+                </li>
+              </ul>
+            </address>
           </div>
 
           <div class="footer__social">

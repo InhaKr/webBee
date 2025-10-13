@@ -1,9 +1,9 @@
 button {
   width: 100%;
-  padding: 10px;
-  background-color: #05c2df;
+  padding: 25px;
+  background-color: #944d34;
   border: none;
-  border-radius: 5px;
+  border-radius: 40px;
   color: $main-title-color;
   font-size: 16px;
   cursor: pointer;
@@ -88,14 +88,16 @@ button {
 .main-button {
   position: fixed;
   border-radius: 5px;
-  background-color: $main-title-color-accent;
+  background-color: transparent;
   width: 280px;
   height: 40px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0; 
+  opacity: 0;
   visibility: hidden; /* Убираем из потока */
   transition: opacity 0.3s ease; /* Плавное появление */
   z-index: 1;
@@ -120,17 +122,23 @@ button {
     }
   }
 
-  @include on-desktoplittle {
+  @include on-mobile {
     position: absolute;
     top: 45px;
-    left: 84%;
+    left: 83%;
     opacity: 1;
     visibility: visible;
     width: 200px;
     height: 48px;
   }
-  @include on-desktopmiddle {
+
+  @include on-desktoplittle {
+    position: absolute;
+    top: 45px;
     left: 83%;
+    visibility: visible;
+    width: 200px;
+    height: 48px;
   }
 }
 
@@ -138,3 +146,34 @@ button {
   opacity: 1;
   visibility: visible;
 }
+
+.busket-button {
+  width: 30px;
+  height: 30px;
+  top: 55px;
+
+  @include on-mobile {
+    width: 20px;
+    height: 20px;
+    top: 25px;
+    left: 75%;
+  }
+
+  @include on-tablet {
+    left: 80%;
+  }
+
+  @include on-desktoplittle {
+    top: 37px;
+    left: 90%;
+  }
+
+  @include on-desktopmiddle {
+    top: 55px;
+    left: 93%;
+  }
+}
+
+// .busket-button:hover{
+//   @include hover(transform, scale(1.09));
+// }

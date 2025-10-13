@@ -13,7 +13,7 @@
 
   z-index: 1000;
   top: 0;
-  background-color: $background-color;
+  background-color: #602e2a;;
   width: 100%;
   height: 100%;
   overflow-y: auto;
@@ -96,7 +96,12 @@
   }
 }
 
-.buy--open {
+// .buy--open {
+//   opacity: 1;
+//   transform: perspective(1000px) rotateY(0deg);
+//   pointer-events: all;
+// }
+.buy:target {
   opacity: 1;
   transform: perspective(1000px) rotateY(0deg);
   pointer-events: all;
@@ -148,7 +153,7 @@ select {
   appearance: none;
   padding: 10px;
   background: url('data:image/svg+xml;utf8,<svg fill="%2300c4cc" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-  background-color: #191536;
+  background-color: #ec6436;
   background-repeat: no-repeat;
   background-position: right 10px center;
 }

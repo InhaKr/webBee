@@ -1,6 +1,10 @@
 .tech {
   padding-block: 80px;
 
+  @include on-mobile {
+    display: none;
+  }
+
   @include on-desktoplittle {
     padding-block: 130px;
   }

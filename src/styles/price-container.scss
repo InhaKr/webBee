@@ -1,17 +1,10 @@
 .price-container {
+  color: white;
   display: flex;
-  justify-content: center;
-  margin-bottom: 51px;
+  align-items: center;
 
   @include on-tablet {
     justify-content: start;
-    margin: 5px 0 45px;
-  }
-
-  @include on-desktoplittle {
-    position: absolute;
-    bottom: 55px;
-    left: 9%;
   }
 
   @include on-desktopmiddle {
@@ -101,7 +94,7 @@
   display: block;
   width: 80px;
   font-size: 26px;
-  color: #00c4cc;
+  color: #ec6436;
 
   @include on-tablet {
     font-weight: 500;
@@ -109,4 +102,20 @@
     line-height: 100%;
     margin-top: 28px;
   }
+}
+
+.buy__basket {
+  display: flex;
+  align-items: center;
+  background-color: #ec6436;
+  width: 65px;
+  height: 65px;
+}
+
+.buy__basket:hover {
+  display: flex;
+  align-items: center;
+  background-color: #7e4b3a;
+  width: 65px;
+  height: 65px;
 }
