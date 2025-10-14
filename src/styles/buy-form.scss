@@ -4,12 +4,7 @@
 
     @include on-desktoplittle {
       margin: 25px;
-      // padding-inline: 110px;
     }
-
-    // @include on-desktopmiddle {
-    //   margin-top: 11%;
-    // }
   }
 
   &__wrapper {
@@ -295,9 +290,9 @@ input:-webkit-autofill:hover {
   color: white;
 }
 
-#total-quantity {
-  padding-left: 55px;
-}
+// #total-quantity {
+//   padding-left: 55px;
+// }
 
 .cart-actions {
   width: 300px;
