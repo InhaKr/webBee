@@ -1,0 +1,88 @@
+.slider {
+  grid-column: span 2;
+
+  &__img-static {
+    @include on-mobile {
+      width: 250px;
+    }
+
+    @include on-tablet {
+      width: 310px;
+      grid-column: 4/-1;
+      transform: translateY(0%);
+    }
+
+    @include on-desktoplittle {
+      width: 320px;
+    }
+
+    @include on-desktopmiddle {
+      width: 360px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include on-desktoplittle {
+      width: 650px;
+    }
+
+    @include on-desktopmiddle {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: none;
+
+    @include on-desktoplittle {
+      display: block;
+    }
+  }
+
+  @include on-mobile {
+    margin: 15px auto;
+  }
+
+  @include on-tablet {
+    grid-column: 4/-1;
+  }
+
+  @include on-desktoplittle {
+    position: relative;
+    width: fit-content;
+    height: 360px; /* Укажи нужную высоту слайдера */
+    overflow: hidden;
+    grid-column: 7 / -1;
+    transform: translateX(30%) translateY(10%);
+  }
+
+  @include on-desktopmiddle {
+    // height: 400px;
+    transform: translateX(45%) translateY(30%);
+  }
+}
+
+// .slider__item {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   opacity: 0;
+//   transition: opacity 0.5s ease;
+// }
+
+.slider__item.active {
+  opacity: 1;
+}

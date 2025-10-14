@@ -1,0 +1,156 @@
+/* Стили для футера */
+.footer {
+  background: linear-gradient(#d38a70, #5d3b2f);
+  padding: 10px 0;
+}
+
+// .footer__category {
+//   position: fixed;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+// }
+
+.footer__container {
+  @include on-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 5px;
+
+  @include on-tablet {
+    display: inline-flex;
+  }
+}
+
+.footer__logo-img {
+  width: 69px;
+  height: 14px;
+}
+
+.footer__wish {
+  @include on-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include on-tablet {
+    justify-content: space-evenly;
+  }
+}
+
+.footer__menu {
+  display: inline-block;
+
+  @include on-mobile {
+    margin-bottom: 20px;
+    width: 95px;
+  }
+
+  @include on-tablet {
+    width: fit-content;
+    margin-right: 45px;
+  }
+
+  @include on-desktoplittle {
+    margin-right: 145px;
+  }
+
+  @include on-desktopmiddle {
+       margin-right: 295px;
+    }
+}
+
+.footer__contact {
+  @include on-mobile {
+    margin-bottom: 15px;
+    width: 145px;
+    font-size: 13px;
+  }
+
+  @include on-tablet {
+    width: 165px;
+  }
+
+  @include on-desktoplittle {
+    font-size: 16px;
+  }
+}
+
+// .footer__menu-item {
+//   @include on-tablet {
+//     margin-right: 10px;
+//   }
+// }
+
+.footer__menu-link {
+  font-size: 13px;
+  color: $main-title-color;
+
+  &:hover {
+    color: $main-title-color-accent;
+  }
+
+  @include on-tablet {
+    padding: 10px 22px;
+  }
+
+  @include on-desktoplittle {
+    font-size: 16px;
+  }
+}
+
+/* Стили для блока с иконками соцсетей */
+.footer__social {
+  display: inline-flex;
+  column-gap: 18px;
+  margin-left: 95px;
+
+  @include on-mobile {
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  @include on-tablet {
+    column-gap: 10px;
+    width: fit-content;
+  }
+}
+
+/* Стили для ссылок соцсетей */
+.footer__social-link {
+  width: 19px;
+  height: 18px;
+  display: inline-block;
+}
+
+/* Стили для иконок соцсетей */
+.footer__social-icon {
+  // width: 18px;
+  // height: 18px;
+  transition: fill 0.3s ease;
+}
+
+.footer__title {
+  color: #fff;
+}
+
+.contact__address {
+  color: #2a1109;
+}
+
+.contact__link {
+  color: #2a1109;
+}
+
+.contact__item a:hover {
+  color: #fff;
+}
+
+// .contact__address:hover {
+//     color: #fff;
+// }
