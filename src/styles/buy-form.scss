@@ -27,22 +27,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    // @include on-tablet {
-    //   display: flex;
-    //   justify-content: space-around;
-    // }
 
     &-picture {
-      // width: 524px;
       height: 100px;
 
-      // @include on-desktoplittle {
-      //   margin-left: -15%;
-      // }
-
       @include on-desktopmiddle {
-        // margin-left: -11%;
-        // width: 860px;
         height: 150px;
       }
     }
