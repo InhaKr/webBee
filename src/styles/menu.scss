@@ -141,7 +141,7 @@
 
   &__nav {
     @include on-mobile {
-      display: none;
+      display: block;
     }
 
     @include on-desktoplittle {
