@@ -1,6 +1,7 @@
 // 'use strict';
 
 //все что касается списка желаний
+
 let w = '';
 let count = 0;
 let countCart = parseInt(localStorage.getItem('countCart')) || 0;
@@ -9,11 +10,13 @@ const x = document.querySelector('#wishlist-body');
 console.log(x);
 
 const hurd = document.querySelector('.product-wishlist');
-console.log(count);
+console.log(hurd);
 
 document.addEventListener('click', addProduct);
 
 function addProduct(e) {
+  console.log('dddddd')
+  
   console.log(e.target.dataset.id);
   if (
     e.target.classList.contains('product-wishlist') &&
@@ -30,7 +33,10 @@ function addProduct(e) {
 
     count += 1;
     console.log(count);
+    console.log(document.querySelectorAll('.wishlist-count'));
+
     document.querySelectorAll('.wishlist-count').forEach(function (el) {
+
       el.innerHTML = count;
     });
 

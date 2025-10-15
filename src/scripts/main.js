@@ -14,17 +14,18 @@ console.log(count);
 document.addEventListener('click', addProduct);
 
 function addProduct(e) {
+  console.log('1211')
   console.log(e.target.dataset.id);
   if (
     e.target.classList.contains('product-wishlist') &&
-    e.target.getAttribute('stroke') === 'grey'
+    e.target.getAttribute('stroke') === 'gray'
   ) {
     document
       .querySelectorAll(`[data-id="${e.target.dataset.id}"]`)
       .forEach(function (element) {
         element.setAttribute(
           'stroke',
-          element.getAttribute('stroke') === 'grey' ? 'red' : 'grey',
+          element.getAttribute('stroke') === 'gray' ? 'red' : 'gray',
         );
       });
 
@@ -71,7 +72,7 @@ function addProduct(e) {
     document.querySelectorAll(`[data-id="${number}"]`).forEach(function (el) {
       el.setAttribute(
         'stroke',
-        el.getAttribute('stroke') === 'grey' ? 'red' : 'grey',
+        el.getAttribute('stroke') === 'gray' ? 'red' : 'gray',
       );
     });
 
@@ -87,7 +88,7 @@ function addProduct(e) {
       .forEach(function (el) {
         el.setAttribute(
           'stroke',
-          el.getAttribute('stroke') === 'grey' ? 'red' : 'grey',
+          el.getAttribute('stroke') === 'gray' ? 'red' : 'gray',
         );
       });
 
