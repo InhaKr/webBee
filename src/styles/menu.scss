@@ -233,7 +233,7 @@
 
     @include on-mobile {
       grid-column: 10 / -1;
-      justify-self: auto;
+      margin-right:40px;
     }
 
     @include on-tablet {
@@ -250,6 +250,7 @@
 
     @include on-mobile {
       padding: 10px;
+      height: 64px;
     }
 
     @include on-desktoplittle {
